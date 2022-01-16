@@ -1,13 +1,21 @@
-<mat-toolbar color="primary">
-  <button (click)="getPokemon()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+<mat-toolbar color="primary" class="toolbar">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>catching_pokemon</mat-icon>
   </button>
-  <span>Pokedex</span>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
+  <h1>Pokedex</h1>
 </mat-toolbar>
+
+<div class="search" color="accent">
+  <h3>Search a Pokémon</h3>
+  <input type="text" [(ngModel)]="search" matInput placeholder="Ex. Greninja">
+  <button (click)="getPokemon()" type="submit"  mat-raised-button color="primary">
+    Search
+  </button>
+</div>
+
+<main *ngIf="card">
+  <mat-card class="pokemon">
+    <h1>{{pokemonData.name}}</h1>
+    <img src={{pokemonData.sprites.other.home.front_default}} alt="">
+  </mat-card>
+</main>

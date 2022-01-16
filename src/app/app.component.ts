@@ -2,27 +2,32 @@ import { Pokemon } from './models/pokemon';
 import { Component } from '@angular/core';
 
 import { PokeApiService } from './service/poke-api.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = 'pokedex';
 
-  pokemonNomeId: string = "charizard";
+  card: boolean = false
 
-  // teste: Pokemon = {};
+  pokemonNomeId: string = "";
 
+  pokemonData: Pokemon = <Pokemon>{}
+
+  search: string = '';
   getPokemon() {
-    this.pokeApiService.getPokemon(this.pokemonNomeId).subscribe({
+    this.pokeApiService.getPokemon(this.search).subscribe({
       next: (data) => {
-        this.pokemonNomeId = data.name
-        console.log(data)
+        this.card = true
+        this.pokemonData = data
+        console.log(this.pokemonData.sprites.other.home.front_default)
       }
     })
   }
-
   constructor(private pokeApiService: PokeApiService) { }
 }

@@ -1,3 +1,10 @@
 export interface Pokemon {
-  name: string
+  name: string,
+  sprites: {
+    other: {
+      home: {
+        front_default: string
+      }
+    }
+  }
 }

@@ -1,3 +1,26 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+main {
+  background-color: #999;
+  margin: 20px;
+  padding: 20px;
+  width: 90vw;
+}
+
+.pokemon {
+  width: min-content;
+  height: min-content;
+  margin: 20px;
+}
+
+.pokemon img {
+  height: 200px;
+}
