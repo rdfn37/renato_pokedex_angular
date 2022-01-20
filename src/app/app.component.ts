@@ -1,4 +1,4 @@
-import { Pokemon } from './models/pokemon';
+import { Pokemon } from './home/models/pokemon';
 import { Component } from '@angular/core';
 
 import { PokeApiService } from './service/poke-api.service';
@@ -11,23 +11,23 @@ import { FormsModule } from '@angular/forms';
 })
 
 export class AppComponent {
-  title = 'pokedex';
+  // title = 'pokedex';
 
-  card: boolean = false
+  // card: boolean = false
 
-  pokemonNomeId: string = "";
+  // pokemonNomeId: string = "";
 
-  pokemonData: Pokemon = <Pokemon>{}
+  // pokemonData: Pokemon = <Pokemon>{}
 
-  search: string = '';
-  getPokemon() {
-    this.pokeApiService.getPokemon(this.search).subscribe({
-      next: (data) => {
-        this.card = true
-        this.pokemonData = data
-        console.log(this.pokemonData.sprites.other.home.front_default)
-      }
-    })
-  }
+  // search: string = '';
+  // getPokemon() {
+  //   this.pokeApiService.getPokemon(this.search).subscribe({
+  //     next: (data) => {
+  //       this.card = true
+  //       this.pokemonData = data
+  //       // console.log(this.pokemonData.sprites.other.official-artwork.front_default)
+  //     }
+  //   })
+  // }
   constructor(private pokeApiService: PokeApiService) { }
 }

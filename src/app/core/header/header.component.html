@@ -1,0 +1,18 @@
+<mat-toolbar color="primary" class="toolbar">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>catching_pokemon</mat-icon>
+  </button>
+  <h1>Pokedex</h1>
+  <span class="example-spacer"></span>
+
+  <div class="search" color="accent">
+    <mat-form-field>
+      <input type="text" [(ngModel)]="search" matInput placeholder="Search Pokémon">
+    </mat-form-field>
+    <button (click)="getPokemon()" type="submit" mat-raised-button color="accent">
+      <span class="material-icons">
+        search
+      </span>
+    </button>
+  </div>
+</mat-toolbar>

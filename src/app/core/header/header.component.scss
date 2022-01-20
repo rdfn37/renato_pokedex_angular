@@ -1,0 +1,23 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+// ---------------------------- Toolbar
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: max-content;
+}
+
+// -------------------------------- Search
+.search {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search button {
+  margin-left: 10px;
+}

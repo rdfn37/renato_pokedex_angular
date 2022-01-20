@@ -6,5 +6,12 @@ export interface Pokemon {
         front_default: string
       }
     }
-  }
+  },
+  id: number,
+  types: [{
+    type: {
+      name: string
+    }
+  }],
+  height: number
 }
