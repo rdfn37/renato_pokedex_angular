@@ -1,3 +1,5 @@
+import { HomeComponent } from './home/home.component';
+import { HomeModule } from './home/home.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -11,7 +13,7 @@ import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,7 +22,7 @@ import { CoreModule } from './core/core.module';
     AppMaterialModule,
     HttpClientModule,
     FormsModule,
-    CoreModule
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

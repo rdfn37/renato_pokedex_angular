@@ -1,0 +1,15 @@
+.container {
+  img {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.poke-card {
+  margin: 10px;
+}

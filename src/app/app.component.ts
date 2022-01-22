@@ -1,4 +1,4 @@
-import { Pokemon } from './home/models/pokemon';
+import { HomePokemon } from './home/models/homePokemon';
 import { Component } from '@angular/core';
 
 import { PokeApiService } from './service/poke-api.service';
