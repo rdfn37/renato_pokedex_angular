@@ -1,6 +1,6 @@
-import { PokeApiService } from './../service/poke-api.service';
-import { HomeService } from './home.service';
 import { Component, OnInit } from '@angular/core';
+
+import { HomeService } from './home.service';
 import { Pokemon } from './models/pokemon';
 
 @Component({
@@ -8,12 +8,16 @@ import { Pokemon } from './models/pokemon';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements OnInit {
   pokemonList = [] as Pokemon[]
+
+  name?: string
 
   constructor(
     private homeService: HomeService,
     ) { }
+
 
     ngOnInit(): void {
       this.homeService.getPokemonList().subscribe({
