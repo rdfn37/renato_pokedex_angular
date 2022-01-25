@@ -9,12 +9,20 @@ import { Pokemon } from './models/pokemon';
   providedIn: 'root',
 })
 export class HomeService {
-  private readonly url = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=20';
+  generations = {
+    gen1: [0, 1],
+    gen2: [151, 100]
+  }
+
+
+
+  private readonly url =
+    `https://pokeapi.co/api/v2/pokemon/?offset=`;
 
   constructor(private httpClient: HttpClient) {}
 
-  getPokemonList() {
-    return this.httpClient.get<HomePokemon>(this.url)
+  getPokemonList(gen: [number, number]) {
+    return this.httpClient.get<HomePokemon>(this.url + `${gen[0]}&limit=${gen[1]}`)
   }
 
   getPokemon(url: string): Observable<Pokemon> {

@@ -3,39 +3,45 @@ import { Component, OnInit } from '@angular/core';
 import { HomeService } from './home.service';
 import { Pokemon } from './models/pokemon';
 
+type gen = [number, number]
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 
+
 export class HomeComponent implements OnInit {
-  pokemonList = [] as Pokemon[]
+  pokemonList = [] as Pokemon[];
+  name?: string;
 
-  name?: string
+  gen1:gen = [0, 151]
+  gen2:gen = [151, 100]
+  gen3:gen = [251, 135]
+  gen4:gen = [386, 107]
+  gen5:gen = [493, 156]
+  gen6:gen = [649, 72]
+  gen7:gen = [721, 88]
+  gen8:gen = [809, 89]
 
-  constructor(
-    private homeService: HomeService,
-    ) { }
+  constructor(private homeService: HomeService) {}
 
-
-    ngOnInit(): void {
-      this.homeService.getPokemonList().subscribe({
-        next: data => {
-          // console.log(data.results)
-          // console.log(data.results[0].name)
-          // console.log(data.results[0].url)
-
-          data.results.forEach(e => {
-            this.homeService.getPokemon(e.url).subscribe({
-              next: data => {
-                console.log(data.sprites.front_default)
-                this.pokemonList.push(data)
-              }
-            })
-          })
-        }
-      })
+  ngOnInit(): void {
+    this.homeService.getPokemonList(this.gen5).subscribe({
+      next: (data) => {
+        console.log(data.results)
+        data.results.forEach((e) => {
+          this.homeService.getPokemon(e.url).subscribe({
+            next: (data) => {
+              this.pokemonList.sort((a, b) => a.id - b.id)
+              return this.pokemonList.push(data);
+            },
+          });
+        })
+      },
+    });
   }
-
 }
+
+
