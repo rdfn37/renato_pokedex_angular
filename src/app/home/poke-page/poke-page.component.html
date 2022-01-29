@@ -1,1 +1,15 @@
-<p>poke-page works!</p>
+<div class="container" *ngIf="pokemon">
+  <mat-card>
+    <div>
+      <h1 class="mat-h1">{{pokemon.species.name|titlecase}}</h1>
+      <img mat-card-lg-image src={{pokemon.sprites.other.home.front_default}} alt={{pokemon.species.name}}>
+    </div>
+    <div>
+      <h2>Pokédex Data</h2>
+      <p>National Nº {{pokemon.id}}</p>
+      <span *ngFor="let type of pokemon.types" class="type {{type.type.name}}">
+        {{type.type.name | titlecase}}
+      </span>
+    </div>
+  </mat-card>
+</div>

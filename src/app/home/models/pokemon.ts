@@ -3,7 +3,12 @@ export interface Pokemon {
     name: string
   },
   sprites: {
-    front_default: string
+    front_default: string,
+    other: {
+      home: {
+        front_default: string
+      }
+    }
   },
   id: number,
   types: [{

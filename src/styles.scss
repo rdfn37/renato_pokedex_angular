@@ -1,7 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
 
+@use "@angular/material" as mat;
+
+@include mat.core();
+
+$my-primary: mat.define-palette(mat.$blue-gray-palette, 900);
+$my-accent: mat.define-palette(mat.$grey-palette, 900);
+$my-warn: mat.define-palette(mat.$red-palette, 800);
+
+$dark-primary: mat.define-palette(mat.$gray-palette, 900);
+$dark-accent: mat.define-palette(mat.$brown-palette, 900);
+$dark-warn: mat.define-palette(mat.$red-palette, 800);
+
+$my-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $my-primary,
+      accent: $my-accent,
+    ),
+  )
+);
+
+$dark-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $dark-primary,
+      accent: $dark-accent,
+    ),
+  )
+);
+
+@include mat.all-component-themes($my-theme);
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
 
 .grass{
   background-color: #9BCC50;

@@ -1,9 +1,19 @@
 <ng-container>
-  <div >
+  <div>
+    <div class="btn-set">
+      <button (click)="genPicker(gen1)" mat-raised-button color="accent">Gen 1</button>
+      <button (click)="genPicker(gen2)" mat-raised-button color="accent">Gen 2</button>
+      <button (click)="genPicker(gen3)" mat-raised-button color="accent">Gen 3</button>
+      <button (click)="genPicker(gen4)" mat-raised-button color="accent">Gen 4</button>
+      <button (click)="genPicker(gen5)" mat-raised-button color="accent">Gen 5</button>
+      <button (click)="genPicker(gen6)" mat-raised-button color="accent">Gen 6</button>
+      <button (click)="genPicker(gen7)" mat-raised-button color="accent">Gen 7</button>
+      <button (click)="genPicker(gen8)" mat-raised-button color="accent">Gen 8</button>
+    </div>
     <div class="container" *ngIf="pokemonList.length > 1">
       <mat-card *ngFor="let pokemon of pokemonList" class="poke-card" MatPaginatorIntl>
         <a routerLink="/{{pokemon.id}}">
-          <img mat-card-image src={{pokemon.sprites.front_default}} alt="Photo of a Shiba Inu">
+          <img mat-card-sm-image src={{pokemon.sprites.front_default}} alt={{pokemon.species.name}}>
         </a>
         <mat-card-title>{{pokemon.species.name | titlecase}}</mat-card-title>
         <mat-card-subtitle>#{{pokemon.id}}</mat-card-subtitle>
