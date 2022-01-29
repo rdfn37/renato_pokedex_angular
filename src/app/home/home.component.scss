@@ -4,7 +4,6 @@
     width: 150px;
     margin: 10px;
   }
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -20,4 +19,13 @@
   margin-right: 10px;
   color: #FFF;
   border-radius: 5px;
+}
+
+.btn-set {
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
