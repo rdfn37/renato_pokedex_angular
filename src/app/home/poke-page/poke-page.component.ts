@@ -22,7 +22,7 @@ export class PokePageComponent implements OnInit {
     const id: number = this.route.snapshot.params['id'];
     this.homeService.getPokemon(this.urlBase + id).subscribe({
       next: data => {
-        // console.log(data)
+        console.log(data)
         this.pokemon = data
         console.log(this.pokemon.species.name)
       }

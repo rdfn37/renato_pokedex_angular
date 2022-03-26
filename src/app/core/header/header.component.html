@@ -1,11 +1,11 @@
-<mat-toolbar color="primary" class="toolbar">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+<mat-toolbar color="primary" class="toolbar p-0 d-flex flex-column flex-md-row">
+  <button routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>catching_pokemon</mat-icon>
   </button>
   <h1>Pokedex</h1>
   <span class="example-spacer"></span>
 
-  <div class="search" color="accent">
+  <div class="search d-flex flex-column flex-md-row" color="accent">
     <mat-form-field>
       <input type="text" [(ngModel)]="search" matInput placeholder="Search Pokémon">
     </mat-form-field>
