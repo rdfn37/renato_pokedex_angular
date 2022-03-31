@@ -1,50 +1,50 @@
 <div class="container" *ngIf="pokemon">
-  <mat-card class="my-2 d-flex flex-column flex-md-row">
-    <div>
-      <h1 class="mat-h1 mx-4 my-0">{{pokemon.species.name|titlecase}}</h1>
-      <img mat-card-lg-image src={{pokemon.sprites.other.home.front_default}} alt={{pokemon.species.name}}>
-    </div>
-    <div class="info">
-      <h2>Pokédex Data</h2>
-      <p>National Nº: {{pokemon.id}}</p>
-      <hr>
-      <div>
-        Type:
-        <span *ngFor="let type of pokemon.types" class="type {{type.type.name}}">
-          {{type.type.name | titlecase}}
-        </span>
+  <mat-card class="my-2">
+    <div class="container">
+      <div class="row">
+        <div class="img col-6 col-xl-4">
+          <h1 class="mat-h1 mx-4 my-0">{{pokemon.species.name|titlecase}}</h1>
+          <img mat-card-xl-image src={{pokemon.sprites.other.home.front_default}} alt={{pokemon.species.name}}>
+        </div>
+        <div class="info col-12 col-md-6 col-xl-4">
+          <h2>Pokédex Data</h2>
+          <p>National Nº: {{pokemon.id}}</p>
+          <hr>
+          <div>
+            Type:
+            <span *ngFor="let type of pokemon.types" class="type {{type.type.name}}">
+              {{type.type.name | titlecase}}
+            </span>
+          </div>
+          <hr>
+          <div>
+            <span>Height: {{pokemon.height}}</span>
+          </div>
+          <hr>
+          <div>
+            <span>Weight: {{pokemon.weight}}</span>
+          </div>
+          <hr>
+          <div>
+            Abilities:
+            <span *ngFor="let ability of pokemon.abilities" class="ability">
+              {{ability.ability.name | titlecase}}
+            </span>
+          </div>
+        </div>
+        <div class="stats col-12 col-xl-4 mt-5 p-0">
+          <table class="table">
+            <tr *ngFor="let stat of pokemon.stats">
+              <th scope="row" class="">{{stat.stat.name | titlecase}}</th>
+              <td>{{stat.base_stat}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Total</th>
+              <td>{{baseTotal}}</td>
+            </tr>
+          </table>
+        </div>
       </div>
-      <hr>
-      <div>
-        <span>Height: {{pokemon.height}}</span>
-      </div>
-      <hr>
-      <div>
-        <span>Weight: {{pokemon.weight}}</span>
-      </div>
-      <hr>
-      <div>
-        Abilities:
-        <span *ngFor="let ability of pokemon.abilities" class="ability">
-          {{ability.ability.name | titlecase}}
-        </span>
-      </div>
-    </div>
-    <div class="stats">
-      <table class="table table-striped m-2">
-        <thead>
-          <tr>
-            <th>
-              Stat
-            </th>
-            <th>Value</th>
-          </tr>
-        </thead>
-        <tr *ngFor="let stat of pokemon.stats">
-          <td>{{stat.stat.name | titlecase}}</td>
-          <td>{{stat.base_stat}}</td>
-        </tr>
-      </table>
     </div>
   </mat-card>
 </div>

@@ -39,14 +39,14 @@ export class HomeComponent implements OnInit {
     this.homeService.getPokemonList(this.selectedGen).subscribe({
       next: (data) => {
         // console.log(data.results)
-        data.results.forEach((e) => {
-          this.homeService.getPokemon(e.url).subscribe({
-            next: (data) => {
-              this.pokemonList.sort((a, b) => a.id - b.id)
-              return this.pokemonList.push(data);
-            },
-          });
-        })
+        // data.results.forEach((e) => {
+        //   this.homeService.getPokemon(e.url).subscribe({
+        //     next: (data) => {
+        //       this.pokemonList.sort((a, b) => a.id - b.id)
+        //       return this.pokemonList.push(data);
+        //     },
+        //   });
+        // })
       },
     });
   }

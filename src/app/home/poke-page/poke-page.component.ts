@@ -15,17 +15,22 @@ export class PokePageComponent implements OnInit {
 
   private readonly urlBase = "https://pokeapi.co/api/v2/pokemon/"
 
-
   pokemon?: Pokemon
+
+  baseTotal = 0
+
+  displayedColumns: string[] = ['name', 'base_stat'];
 
   ngOnInit(): void {
     const id: number = this.route.snapshot.params['id'];
     this.homeService.getPokemon(this.urlBase + id).subscribe({
       next: data => {
-        console.log(data)
         this.pokemon = data
-        console.log(this.pokemon.species.name)
+        this.pokemon?.stats.forEach(stat => {
+          this.baseTotal += stat.base_stat
+        })
       }
     })
+
   }
 }

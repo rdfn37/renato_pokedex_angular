@@ -1,9 +1,10 @@
-<mat-toolbar color="primary" class="toolbar p-0 d-flex flex-column flex-md-row">
-  <button routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>catching_pokemon</mat-icon>
-  </button>
-  <h1>Pokedex</h1>
-  <span class="example-spacer"></span>
+<mat-toolbar color="primary" class="toolbar p-0 d-flex flex-column flex-md-row justify-content-between">
+  <div class="d-flex align-items-center">
+    <button routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>catching_pokemon</mat-icon>
+    </button>
+    <h1>Pokédex</h1>
+  </div>
 
   <div class="search d-flex flex-column flex-md-row" color="accent">
     <mat-form-field>
@@ -14,5 +15,22 @@
         search
       </span>
     </button>
+  </div>
+
+  <div class="m-2">
+    <button mat-button [matMenuTriggerFor]="generations">
+      <mat-icon>expand_more</mat-icon>
+      Generations
+    </button>
+    <mat-menu #generations="matMenu">
+      <button mat-menu-item routerLink="/gen/1" class="d-inline-flex align-items-center rounded">GEN I</button>
+      <button mat-menu-item routerLink="/gen/2" class="d-inline-flex align-items-center rounded">GEN II</button>
+      <button mat-menu-item routerLink="/gen/3" class="d-inline-flex align-items-center rounded">GEN III</button>
+      <button mat-menu-item routerLink="/gen/4" class="d-inline-flex align-items-center rounded">GEN IV</button>
+      <button mat-menu-item routerLink="/gen/5" class="d-inline-flex align-items-center rounded">GEN V</button>
+      <button mat-menu-item routerLink="/gen/6" class="d-inline-flex align-items-center rounded">GEN VI</button>
+      <button mat-menu-item routerLink="/gen/7" class="d-inline-flex align-items-center rounded">GEN VII</button>
+      <button mat-menu-item routerLink="/gen/8" class="d-inline-flex align-items-center rounded">GEN VIII</button>
+    </mat-menu>
   </div>
 </mat-toolbar>

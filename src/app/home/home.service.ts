@@ -1,9 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 
 import { HomePokemon } from '../home/models/homePokemon';
 import { Pokemon } from './models/pokemon';
+
+type ApiResponse = {
+  page: number;
+  results: HomePokemon[];
+};
 
 @Injectable({
   providedIn: 'root',
@@ -15,10 +20,10 @@ export class HomeService {
 
   constructor(private httpClient: HttpClient) {}
 
-  getPokemonList(gen: [number, number] = this.gen1) {
-    return this.httpClient.get<HomePokemon>(
+  getPokemonList(gen: [number, number] = this.gen1): Observable<HomePokemon[]> {
+    return this.httpClient.get<ApiResponse>(
       this.url + `${gen[0]}&limit=${gen[1]}`
-    );
+    ).pipe(map(data => data.results))
   }
 
   getPokemon(url: string): Observable<Pokemon> {

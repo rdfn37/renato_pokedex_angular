@@ -12,6 +12,7 @@ import { PokeApiService } from '../../service/poke-api.service';
 })
 export class HeaderComponent implements OnInit {
 
+  showFiller = true;
   search: string = ''
   pokemonData: Pokemon = <Pokemon>{}
 

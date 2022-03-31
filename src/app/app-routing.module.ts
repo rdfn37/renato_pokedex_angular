@@ -2,6 +2,7 @@ import { PokePageComponent } from './home/poke-page/poke-page.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { GenerationComponent } from './home/generation/generation.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: ':id',
     component: PokePageComponent
+  },
+  {
+    path: 'gen/:id',
+    component: GenerationComponent
   }
 ];
 

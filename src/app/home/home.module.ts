@@ -7,13 +7,15 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { PokePageComponent } from './poke-page/poke-page.component';
+import { GenerationComponent } from './generation/generation.component';
 
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    PokePageComponent
+    PokePageComponent,
+    GenerationComponent
   ],
   imports: [
     CommonModule,

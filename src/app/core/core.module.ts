@@ -6,12 +6,16 @@ import { RouterModule } from '@angular/router';
 
 import { AppMaterialModule } from './../app-shared/app-material/app-material.module';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +25,9 @@ import { HeaderComponent } from './header/header.component';
     HttpClientModule
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent
   ]
 })
 export class CoreModule { }
