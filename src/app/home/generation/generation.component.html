@@ -1,7 +1,7 @@
 <ng-container>
   <div class="container-fluid">
       <div class="container" *ngIf="pokemons.length > 0">
-        <mat-card *ngFor="let pokemon of pokemons" class="card-main poke-card" MatPaginatorIntl>
+        <mat-card *ngFor="let pokemon of pokemons" class="cosmog-black card-main poke-card" MatPaginatorIntl>
           <a routerLink="/{{pokemon.id}}">
             <img mat-card-sm-image src={{pokemon.sprites.front_default}} alt={{pokemon.species.name}}>
           </a>

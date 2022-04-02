@@ -1,16 +1,8 @@
-.example-card {
-  // max-width: 100%;
+@import "src/styles.scss";
+
+.card-main {
   margin: 30px;
-  // background-color: $my-warn;
-}
-
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
-
-mat-card-subtitle {
-  color: #ECEFF1;
+  padding: 20px;
 }
 
 .type {
@@ -26,6 +18,19 @@ mat-card-subtitle {
 .poke-card {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $cosmog-navy;
+}
+
+.gym-leader-frame {
+  color: $cosmog-black;
+  padding: 10px;
+  background-color: #FFF;
+  border-radius: 5px;
+  width: 250px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
