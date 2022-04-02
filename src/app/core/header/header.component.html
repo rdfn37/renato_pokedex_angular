@@ -1,4 +1,4 @@
-<mat-toolbar color="primary" class="toolbar p-0 d-flex flex-column flex-md-row justify-content-between">
+<mat-toolbar  class="cosmog-navy toolbar p-0 d-flex flex-column flex-md-row justify-content-between">
   <div class="d-flex align-items-center">
     <button routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>catching_pokemon</mat-icon>
@@ -10,7 +10,7 @@
     <mat-form-field>
       <input type="text" [(ngModel)]="search" matInput placeholder="Search Pokémon">
     </mat-form-field>
-    <button type="submit" mat-raised-button color="accent">
+    <button type="submit" mat-raised-button class="btn cosmog-pink">
       <span class="material-icons">
         search
       </span>
@@ -32,8 +32,6 @@
       <button mat-menu-item routerLink="/gen/7" class="d-inline-flex align-items-center rounded">GEN VII</button>
       <button mat-menu-item routerLink="/gen/8" class="d-inline-flex align-items-center rounded">GEN VIII</button>
     </mat-menu>
-  </div>
-  <div class="m-2">
     <button mat-button [matMenuTriggerFor]="games">
       <mat-icon>expand_more</mat-icon>
       Games

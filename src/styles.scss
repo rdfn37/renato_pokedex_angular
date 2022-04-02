@@ -8,7 +8,7 @@
 
 $body-bg: #000;
 
-$my-primary: mat.define-palette(mat.$purple-palette, 900);
+$my-primary: mat.define-palette(mat.$purple-palette, #2F397C);
 $my-accent: mat.define-palette(mat.$yellow-palette, 200);
 $my-warn: mat.define-palette(mat.$red-palette, 800);
 
@@ -44,16 +44,37 @@ html, body { min-height: 100%; }
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #694095;
 }
 
-.above {
-  height: 100%;
-  background-color: red;
+$cosmog-navy: #2F397C;
+$cosmog-yellow: #EFEB84;
+$cosmog-pink: #E3629D;
+$cosmog-blue: #3CBDEF;
+$cosmog-black: #1B232C;
+$cosmog-purple: #694095;
+
+.cosmog-navy {
+  background-color: #2F397C;
+}
+.cosmog-yellow {
+  background-color: #EFEB84;
+}
+.cosmog-pink {
+  background-color: #E3629D;
+}
+.cosmog-blue {
+  background-color: #3CBDEF;
+}
+.cosmog-black {
+  background-color: #1B232C;
+}
+.cosmog-purple {
+  background-color: #694095;
 }
 
 
 .card-main {
-  background-color: #263238;
   color: #fff;
   p, span {
     font-size: 1.2em;

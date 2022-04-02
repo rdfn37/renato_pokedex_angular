@@ -1,3 +1,4 @@
+@import "src/styles.scss";
 .example-spacer {
   flex: 1 1 auto;
 }
@@ -5,7 +6,7 @@
 // ---------------------------- Toolbar
 
 .toolbar {
-  position: sticky;
+  // position: sticky;
   top: 0;
   z-index: 1;
   height: max-content;
