@@ -1,0 +1,46 @@
+<mat-card *ngFor="let gym of gyms$ | async" class="example-card card-main">
+  <mat-card-header>
+    <!-- <div mat-card-avatar class="example-header-image"></div> -->
+    <mat-card-title>{{gym.location}} Gym</mat-card-title>
+    <mat-card-subtitle>Rewards: {{gym.reward}}</mat-card-subtitle>
+  </mat-card-header>
+  <img height="150px" src={{gym.leader.img_url}} alt="">
+  <mat-card-content>
+    <p>
+      {{gym.description}}
+    </p>
+    <mat-grid-list cols="3" rowHeight="410px" gutterSize="20px">
+      <mat-grid-tile *ngFor="let pokemon of gym.leader.team">
+        <mat-card class="poke-card">
+          <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
+          <img mat-card-sm-image src={{pokemon.img_url}} alt="">
+          <mat-card-content>
+            <p>Level {{pokemon.level}}</p>
+            <span>Type: </span>
+            <span *ngFor="let type of pokemon.type" class="type {{type | lowercase}}">{{type}} </span>
+            <mat-list>
+              <mat-list-item *ngFor="let move of pokemon.moves">
+                <mat-divider></mat-divider>
+                {{move}}
+              </mat-list-item>
+            </mat-list>
+          </mat-card-content>
+        </mat-card>
+        <!-- <p>{{pokemon.pokemon}}</p>
+            <img height="100" src={{pokemon.img_url}} alt="">
+            <p>Level {{pokemon.level}}</p>
+            <span>Type </span>
+            <ul>
+              <li *ngFor="let type of pokemon.type">
+                <span>{{type}}</span>
+              </li>
+            </ul>
+            <p>Ability: {{pokemon.ability}}</p>
+            <span>Moves</span>
+            <ul>
+              <li  *ngFor="let move of pokemon.moves">{{move}}</li>
+            </ul> -->
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+</mat-card>

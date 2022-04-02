@@ -1,0 +1,32 @@
+.example-card {
+  // max-width: 100%;
+  margin: 30px;
+  // background-color: $my-warn;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+mat-card-subtitle {
+  color: #ECEFF1;
+}
+
+.type {
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+[mat-card-sm-image] {
+  margin-bottom: 20px;
+}
+
+.poke-card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

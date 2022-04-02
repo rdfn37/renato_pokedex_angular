@@ -3,14 +3,14 @@
     <button routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>catching_pokemon</mat-icon>
     </button>
-    <h1>Pokédex</h1>
+    <h1>Nuzlockedex</h1>
   </div>
 
   <div class="search d-flex flex-column flex-md-row" color="accent">
     <mat-form-field>
       <input type="text" [(ngModel)]="search" matInput placeholder="Search Pokémon">
     </mat-form-field>
-    <button (click)="getPokemon()" type="submit" mat-raised-button color="accent">
+    <button type="submit" mat-raised-button color="accent">
       <span class="material-icons">
         search
       </span>
@@ -31,6 +31,15 @@
       <button mat-menu-item routerLink="/gen/6" class="d-inline-flex align-items-center rounded">GEN VI</button>
       <button mat-menu-item routerLink="/gen/7" class="d-inline-flex align-items-center rounded">GEN VII</button>
       <button mat-menu-item routerLink="/gen/8" class="d-inline-flex align-items-center rounded">GEN VIII</button>
+    </mat-menu>
+  </div>
+  <div class="m-2">
+    <button mat-button [matMenuTriggerFor]="games">
+      <mat-icon>expand_more</mat-icon>
+      Games
+    </button>
+    <mat-menu #games="matMenu">
+      <button mat-menu-item routerLink="/xy" class="d-inline-flex align-items-center rounded">Pokémon X/Y</button>
     </mat-menu>
   </div>
 </mat-toolbar>

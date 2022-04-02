@@ -8,24 +8,28 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'home'
+    redirectTo: 'home',
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+  },
+  {
+    path: 'xy',
+    loadChildren: () => import('./xy/xy.module').then((m) => m.XyModule),
   },
   {
     path: ':id',
-    component: PokePageComponent
+    component: PokePageComponent,
   },
   {
     path: 'gen/:id',
-    component: GenerationComponent
-  }
+    component: GenerationComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

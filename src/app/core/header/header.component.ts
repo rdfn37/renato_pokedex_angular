@@ -16,15 +16,15 @@ export class HeaderComponent implements OnInit {
   search: string = ''
   pokemonData: Pokemon = <Pokemon>{}
 
-  getPokemon() {
-    console.log("oi")
-    this.corePokeapi.getPokemon(this.search).subscribe({
-      next: data => {
-        this.pokemonData = data
-        console.log(this.pokemonData.name)
-      }
-    })
-  }
+  // getPokemon() {
+  //   console.log("oi")
+  //   this.corePokeapi.getPokemon(this.search).subscribe({
+  //     next: data => {
+  //       this.pokemonData = data
+  //       console.log(this.pokemonData.name)
+  //     }
+  //   })
+  // }
 
   constructor(private corePokeapi: CorePokeapiService) { }
 
