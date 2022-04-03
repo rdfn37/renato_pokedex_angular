@@ -1,38 +1,111 @@
-  <mat-card *ngFor="let gym of gyms$ | async" class="example-card cosmog-black card-main">
-    <mat-card-header>
-      <!-- <div mat-card-avatar class="example-header-image"></div> -->
-      <mat-card-title>{{gym.location}} Gym</mat-card-title>
-      <mat-card-subtitle>Rewards: {{gym.reward}}</mat-card-subtitle>
-    </mat-card-header>
-    <div class="gym-leader-frame">
+<mat-tab-group>
+  <mat-tab label="Gyms">
+    <mat-card *ngFor="let gym of gyms$ | async" class="example-card cosmog-black card-main">
+      <mat-card-header>
+        <mat-card-title>{{gym.location}} Gym</mat-card-title>
+        <mat-card-subtitle>Rewards: {{gym.reward}}</mat-card-subtitle>
+      </mat-card-header>
       <h3>{{gym.leader.name}}</h3>
-      <hr>
-      <img height="150px" src={{gym.leader.img_url}} alt="">
-    </div>
-    <mat-card-content>
-      <p>
-        {{gym.description}}
-      </p>
-      <mat-grid-list cols="3" rowHeight="410px" gutterSize="20px">
-        <mat-grid-tile *ngFor="let pokemon of gym.leader.team">
-          <mat-card class="poke-card">
-            <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
-            <a routerLink="/{{pokemon.pokemon | lowercase}}">
-              <img mat-card-sm-image src={{pokemon.img_url}} alt="">
-            </a>
-            <mat-card-content>
-              <p>Level {{pokemon.level}}</p>
-              <span>Type: </span>
-              <span *ngFor="let type of pokemon.type" class="type {{type | lowercase}}">{{type}} </span>
-              <mat-list>
-                <mat-list-item *ngFor="let move of pokemon.moves">
-                  <mat-divider></mat-divider>
-                  {{move}}
-                </mat-list-item>
-              </mat-list>
-            </mat-card-content>
-          </mat-card>
-        </mat-grid-tile>
-      </mat-grid-list>
-    </mat-card-content>
-  </mat-card>
+      <div class="gym-leader-frame">
+        <img height="150px" src={{gym.leader.img_url}} alt="">
+      </div>
+      <mat-card-content>
+        <p>
+          {{gym.description}}
+        </p>
+        <mat-grid-list cols="3" rowHeight="410px" gutterSize="20px">
+          <mat-grid-tile *ngFor="let pokemon of gym.leader.team">
+            <mat-card class="poke-card">
+              <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
+              <a routerLink="/{{pokemon.pokemon | lowercase}}">
+                <img mat-card-sm-image src={{pokemon.img_url}} alt="">
+              </a>
+              <mat-card-content>
+                <p>Level {{pokemon.level}}</p>
+                <span>Type: </span>
+                <span *ngFor="let type of pokemon.type" class="type {{type | lowercase}}">{{type}} </span>
+                <mat-list>
+                  <mat-list-item *ngFor="let move of pokemon.moves">
+                    <mat-divider></mat-divider>
+                    {{move}}
+                  </mat-list-item>
+                </mat-list>
+              </mat-card-content>
+            </mat-card>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-card-content>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="League">
+    <mat-card *ngFor="let leagueMember of leagueMembers$ | async" class="example-card cosmog-black card-main">
+      <h3>{{leagueMember.name}}</h3>
+      <div class="gym-leader-frame">
+        <img height="150px" src={{leagueMember.img_url}} alt="">
+      </div>
+      <mat-card-content>
+        <p>
+          {{leagueMember.description}}
+        </p>
+        <mat-grid-list cols="4" rowHeight="410px" gutterSize="15px">
+          <mat-grid-tile *ngFor="let pokemon of leagueMember.team">
+            <mat-card class="poke-card">
+              <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
+              <a routerLink="/{{pokemon.pokemon | lowercase}}">
+                <img mat-card-sm-image src={{pokemon.img_url}} alt="">
+              </a>
+              <mat-card-content>
+                <p>Level {{pokemon.level}}</p>
+                <span>Type: </span>
+                <span *ngFor="let type of pokemon.type" class="type {{type | lowercase}}">{{type}} </span>
+                <mat-list>
+                  <mat-list-item *ngFor="let move of pokemon.moves">
+                    <mat-divider></mat-divider>
+                    {{move}}
+                  </mat-list-item>
+                </mat-list>
+              </mat-card-content>
+            </mat-card>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-card-content>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="Rival">
+    <mat-card *ngFor="let rivalBattle of rivalBattles$ | async" class="example-card cosmog-black card-main">
+      <mat-card-title>{{rivalBattle.order}} Battle</mat-card-title>
+      <mat-card-subtitle>{{rivalBattle.location}} - Reward: {{rivalBattle.reward}}</mat-card-subtitle>
+      <!-- <div class="gym-leader-frame"> -->
+        <img height="150px" src={{rivalBattle.img_url}} alt="">
+      <!-- </div> -->
+      <mat-card-content>
+        <div *ngFor="let team of rivalBattle.teams">
+          <p>
+            If you picked {{team.condition}} as your starter:
+          </p>
+          <mat-grid-list cols="4" rowHeight="420px" gutterSize="15px">
+            <mat-grid-tile *ngFor="let pokemon of team.team">
+              <mat-card class="poke-card">
+                <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
+                <a routerLink="/{{pokemon.pokemon | lowercase}}">
+                  <img mat-card-sm-image src={{pokemon.img_url}} alt="">
+                </a>
+                <mat-card-content>
+                  <p>Level {{pokemon.level}}</p>
+                  <span>Type: </span>
+                  <span *ngFor="let type of pokemon.type" class="type {{type | lowercase}}">{{type}} </span>
+                  <mat-list>
+                    <mat-list-item *ngFor="let move of pokemon.moves">
+                      <mat-divider></mat-divider>
+                      {{move}}
+                    </mat-list-item>
+                  </mat-list>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </mat-tab>
+</mat-tab-group>

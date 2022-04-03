@@ -17,7 +17,7 @@
 
 .poke-card {
   height: 100%;
-  width: 100%;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,8 +30,15 @@
   background-color: #FFF;
   border-radius: 5px;
   width: 250px;
-  height: 250px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+mat-card-content {
+  p {
+    margin-top: 10px;
+  }
 }

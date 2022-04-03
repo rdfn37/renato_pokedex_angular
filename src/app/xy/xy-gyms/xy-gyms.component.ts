@@ -1,7 +1,9 @@
+import { LeagueMembers } from './../../modelsG/league-members';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Gym } from 'src/app/modelsG/gym';
 import { XyService } from '../xy.service';
+import { RivalBattle } from 'src/app/modelsG/rival-battle';
 
 @Component({
   selector: 'app-xy-gyms',
@@ -11,6 +13,10 @@ import { XyService } from '../xy.service';
 export class XyGymsComponent implements OnInit {
 
   gyms$?: Observable<Gym[]>
+
+  leagueMembers$?: Observable<LeagueMembers[]>
+
+  rivalBattles$?: Observable<RivalBattle[]>
 
   constructor(private xyService: XyService) { }
 
@@ -23,7 +29,8 @@ export class XyGymsComponent implements OnInit {
     // })
 
     this.gyms$ = this.xyService.getGyms()
-
+    this.leagueMembers$ = this.xyService.getLeagueMembers()
+    this.rivalBattles$ = this.xyService.getRivalBattles()
     // console.log(this.gyms$.subscribe())
     // console.log(this.gyms$)
   }
