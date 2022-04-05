@@ -4,6 +4,7 @@ import { map, Observable, tap } from 'rxjs';
 
 import { Gym } from '../modelsG/gym';
 import { LeagueMembers } from '../modelsG/league-members';
+import { LysandreBattle } from '../modelsG/lysandre-battle';
 import { RivalBattle } from '../modelsG/rival-battle';
 
 type ApiResponse = {
@@ -35,5 +36,11 @@ export class XyService {
     const url = this.baseUrl + '/xy_rival_battles';
 
     return this.http.get<RivalBattle[]>(url);
+  }
+
+  getLysandreBattle(): Observable<LysandreBattle[]> {
+    const url = this.baseUrl + '/xy_lysandre_battles';
+
+    return this.http.get<LysandreBattle[]>(url);
   }
 }

@@ -13,8 +13,8 @@
         <p>
           {{gym.description}}
         </p>
-        <mat-grid-list cols="3" rowHeight="410px" gutterSize="20px">
-          <mat-grid-tile *ngFor="let pokemon of gym.leader.team">
+        <mat-grid-list cols="4" rowHeight="420px" gutterSize="15px">
+          <mat-grid-tile *ngFor="let pokemon of gym.leader.team" [colspan]="colspan">
             <mat-card class="poke-card">
               <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
               <a routerLink="/{{pokemon.pokemon | lowercase}}">
@@ -47,8 +47,8 @@
         <p>
           {{leagueMember.description}}
         </p>
-        <mat-grid-list cols="4" rowHeight="410px" gutterSize="15px">
-          <mat-grid-tile *ngFor="let pokemon of leagueMember.team">
+        <mat-grid-list cols="4" rowHeight="420px" gutterSize="15px">
+          <mat-grid-tile *ngFor="let pokemon of leagueMember.team" [colspan]="colspan">
             <mat-card class="poke-card">
               <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
               <a routerLink="/{{pokemon.pokemon | lowercase}}">
@@ -76,7 +76,7 @@
       <mat-card-title>{{rivalBattle.order}} Battle</mat-card-title>
       <mat-card-subtitle>{{rivalBattle.location}} - Reward: {{rivalBattle.reward}}</mat-card-subtitle>
       <!-- <div class="gym-leader-frame"> -->
-        <img height="150px" src={{rivalBattle.img_url}} alt="">
+      <img height="150px" src={{rivalBattle.img_url}} alt="">
       <!-- </div> -->
       <mat-card-content>
         <div *ngFor="let team of rivalBattle.teams">
@@ -84,7 +84,7 @@
             If you picked {{team.condition}} as your starter:
           </p>
           <mat-grid-list cols="4" rowHeight="420px" gutterSize="15px">
-            <mat-grid-tile *ngFor="let pokemon of team.team">
+            <mat-grid-tile *ngFor="let pokemon of team.team" [colspan]="colspan">
               <mat-card class="poke-card">
                 <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
                 <a routerLink="/{{pokemon.pokemon | lowercase}}">
@@ -107,5 +107,37 @@
         </div>
       </mat-card-content>
     </mat-card>
+  </mat-tab>
+  <mat-tab label="Lysandre">
+    <mat-card *ngFor="let lysandreBattle of lysandreBattles$ | async" class="example-card cosmog-black card-main">
+      <mat-card-title>{{lysandreBattle.order}} Battle</mat-card-title>
+      <mat-card-subtitle>{{lysandreBattle.location}} - Reward: {{lysandreBattle.reward}}</mat-card-subtitle>
+      <img height="150px" src={{lysandreBattle.img_url}} alt="">
+      <hr>
+      <mat-grid-list cols="4" rowHeight="420px" gutterSize="15px">
+        <mat-grid-tile *ngFor="let pokemon of lysandreBattle.team" [colspan]="colspan">
+          <mat-card class="poke-card">
+            <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
+            <a routerLink="/{{pokemon.pokemon | lowercase}}">
+              <img mat-card-sm-image src={{pokemon.img_url}} alt="">
+            </a>
+            <mat-card-content>
+              <p>Level {{pokemon.level}}</p>
+              <span>Type: </span>
+              <span *ngFor="let type of pokemon.type" class="type {{type | lowercase}}">{{type}} </span>
+              <mat-list>
+                <mat-list-item *ngFor="let move of pokemon.moves">
+                  <mat-divider></mat-divider>
+                  {{move}}
+                </mat-list-item>
+              </mat-list>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="AZ">
+
   </mat-tab>
 </mat-tab-group>
