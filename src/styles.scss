@@ -36,6 +36,14 @@ $dark-theme: mat.define-light-theme(
 
 @include mat.all-component-themes($my-theme);
 
+$primary: #212121;
+$secondary: #323232;
+$accent: #FF1E56;
+
+// $primary: #212121;
+// $secondary: #01579B;
+// $accent: #004D40;
+
 * {
   margin: 0px;
   padding: 0px;
@@ -44,33 +52,20 @@ html, body { min-height: 100%; }
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: #694095;
+  background-color: $secondary;
 }
 
-$cosmog-navy: #2F397C;
-$cosmog-yellow: #EFEB84;
-$cosmog-pink: #E3629D;
-$cosmog-blue: #3CBDEF;
-$cosmog-black: #1B232C;
-$cosmog-purple: #694095;
-
-.cosmog-navy {
-  background-color: #2F397C;
+.back-primary {
+  background-color: $primary;
 }
-.cosmog-yellow {
-  background-color: #EFEB84;
+.back-secondary {
+  background-color: $secondary;
 }
-.cosmog-pink {
-  background-color: #E3629D;
+.back-accent {
+  background-color: $accent;
 }
-.cosmog-blue {
-  background-color: #3CBDEF;
-}
-.cosmog-black {
-  background-color: #1B232C;
-}
-.cosmog-purple {
-  background-color: #694095;
+.header {
+  background-color: $primary;
 }
 
 

@@ -16,6 +16,11 @@ const routes: Routes = [
     redirectTo: 'meowstic-male'
   },
   {
+    path: 'mr. mime',
+    pathMatch: 'full',
+    redirectTo: 'mr-mime'
+  },
+  {
     path: 'home',
     component: HomeComponent,
   },

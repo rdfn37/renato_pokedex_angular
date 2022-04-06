@@ -1,6 +1,6 @@
 <mat-tab-group>
   <mat-tab label="Gyms">
-    <mat-card *ngFor="let gym of gyms$ | async" class="example-card cosmog-black card-main">
+    <mat-card *ngFor="let gym of gyms$ | async" class="example-card back-primary card-main">
       <mat-card-header>
         <mat-card-title>{{gym.location}} Gym</mat-card-title>
         <mat-card-subtitle>Rewards: {{gym.reward}}</mat-card-subtitle>
@@ -15,7 +15,7 @@
         </p>
         <mat-grid-list cols="4" rowHeight="420px" gutterSize="15px">
           <mat-grid-tile *ngFor="let pokemon of gym.leader.team" [colspan]="colspan">
-            <mat-card class="poke-card">
+            <mat-card class="poke-info">
               <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
               <a routerLink="/{{pokemon.pokemon | lowercase}}">
                 <img mat-card-sm-image src={{pokemon.img_url}} alt="">
@@ -38,7 +38,7 @@
     </mat-card>
   </mat-tab>
   <mat-tab label="League">
-    <mat-card *ngFor="let leagueMember of leagueMembers$ | async" class="example-card cosmog-black card-main">
+    <mat-card *ngFor="let leagueMember of leagueMembers$ | async" class="example-card back-primary card-main">
       <h3>{{leagueMember.name}}</h3>
       <div class="gym-leader-frame">
         <img height="150px" src={{leagueMember.img_url}} alt="">
@@ -49,7 +49,7 @@
         </p>
         <mat-grid-list cols="4" rowHeight="420px" gutterSize="15px">
           <mat-grid-tile *ngFor="let pokemon of leagueMember.team" [colspan]="colspan">
-            <mat-card class="poke-card">
+            <mat-card class="poke-info">
               <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
               <a routerLink="/{{pokemon.pokemon | lowercase}}">
                 <img mat-card-sm-image src={{pokemon.img_url}} alt="">
@@ -72,7 +72,7 @@
     </mat-card>
   </mat-tab>
   <mat-tab label="Rival">
-    <mat-card *ngFor="let rivalBattle of rivalBattles$ | async" class="example-card cosmog-black card-main">
+    <mat-card *ngFor="let rivalBattle of rivalBattles$ | async" class="example-card back-primary card-main">
       <mat-card-title>{{rivalBattle.order}} Battle</mat-card-title>
       <mat-card-subtitle>{{rivalBattle.location}} - Reward: {{rivalBattle.reward}}</mat-card-subtitle>
       <!-- <div class="gym-leader-frame"> -->
@@ -85,7 +85,7 @@
           </p>
           <mat-grid-list cols="4" rowHeight="420px" gutterSize="15px">
             <mat-grid-tile *ngFor="let pokemon of team.team" [colspan]="colspan">
-              <mat-card class="poke-card">
+              <mat-card class="poke-info">
                 <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
                 <a routerLink="/{{pokemon.pokemon | lowercase}}">
                   <img mat-card-sm-image src={{pokemon.img_url}} alt="">
@@ -109,14 +109,14 @@
     </mat-card>
   </mat-tab>
   <mat-tab label="Lysandre">
-    <mat-card *ngFor="let lysandreBattle of lysandreBattles$ | async" class="example-card cosmog-black card-main">
+    <mat-card *ngFor="let lysandreBattle of lysandreBattles$ | async" class="example-card back-primary card-main">
       <mat-card-title>{{lysandreBattle.order}} Battle</mat-card-title>
       <mat-card-subtitle>{{lysandreBattle.location}} - Reward: {{lysandreBattle.reward}}</mat-card-subtitle>
       <img height="150px" src={{lysandreBattle.img_url}} alt="">
       <hr>
       <mat-grid-list cols="4" rowHeight="420px" gutterSize="15px">
         <mat-grid-tile *ngFor="let pokemon of lysandreBattle.team" [colspan]="colspan">
-          <mat-card class="poke-card">
+          <mat-card class="poke-info">
             <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
             <a routerLink="/{{pokemon.pokemon | lowercase}}">
               <img mat-card-sm-image src={{pokemon.img_url}} alt="">
@@ -138,14 +138,14 @@
     </mat-card>
   </mat-tab>
   <mat-tab label="AZ">
-    <mat-card *ngFor="let azBattle of azBattle$ | async" class="example-card cosmog-black card-main">
+    <mat-card *ngFor="let azBattle of azBattle$ | async" class="example-card back-primary card-main">
       <mat-card-title>Pokémon Trainer AZ</mat-card-title>
       <mat-card-subtitle>{{azBattle.location}}</mat-card-subtitle>
       <img height="150px" src={{azBattle.img_url}} alt="">
       <hr>
       <mat-grid-list cols="4" rowHeight="420px" gutterSize="15px">
         <mat-grid-tile *ngFor="let pokemon of azBattle.team" [colspan]="colspan">
-          <mat-card class="poke-card">
+          <mat-card class="poke-info">
             <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
             <a routerLink="/{{pokemon.pokemon | lowercase}}">
               <img mat-card-sm-image src={{pokemon.img_url}} alt="">

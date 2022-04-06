@@ -1,4 +1,4 @@
-<mat-toolbar  class="cosmog-navy toolbar p-0 d-flex flex-column flex-md-row justify-content-between">
+<mat-toolbar  class="header toolbar p-0 d-flex flex-column flex-md-row justify-content-between">
   <div class="d-flex align-items-center">
     <button routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>catching_pokemon</mat-icon>
@@ -10,14 +10,14 @@
     <mat-form-field>
       <input type="text" [(ngModel)]="search" matInput placeholder="Search Pokémon">
     </mat-form-field>
-    <button type="submit" mat-raised-button class="btn cosmog-pink">
+    <button type="submit" mat-raised-button class="btn back-accent">
       <span class="material-icons">
         search
       </span>
     </button>
   </div>
 
-  <div class="m-2">
+  <div class="menu">
     <button mat-button [matMenuTriggerFor]="generations">
       <mat-icon>expand_more</mat-icon>
       Generations

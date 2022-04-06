@@ -5,7 +5,7 @@ export interface Pokemon {
   sprites: {
     front_default: string,
     other: {
-      home: {
+      ["official-artwork"]: {
         front_default: string
       }
     }
