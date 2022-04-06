@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { XyGymsComponent } from './xy-gyms/xy-gyms.component';
+import { XyBattlesComponent } from './xy-battles/xy-battles.component';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'gyms'
+    redirectTo: 'battles'
   },
   {
-    path: 'gyms',
-    component: XyGymsComponent
+    path: 'battles',
+    component: XyBattlesComponent
   }
 ];
 

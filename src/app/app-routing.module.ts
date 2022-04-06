@@ -11,6 +11,11 @@ const routes: Routes = [
     redirectTo: 'home',
   },
   {
+    path: 'meowstic',
+    pathMatch: 'full',
+    redirectTo: 'meowstic-male'
+  },
+  {
     path: 'home',
     component: HomeComponent,
   },

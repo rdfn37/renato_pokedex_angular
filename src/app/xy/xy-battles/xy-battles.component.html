@@ -138,6 +138,32 @@
     </mat-card>
   </mat-tab>
   <mat-tab label="AZ">
-
+    <mat-card *ngFor="let azBattle of azBattle$ | async" class="example-card cosmog-black card-main">
+      <mat-card-title>Pokémon Trainer AZ</mat-card-title>
+      <mat-card-subtitle>{{azBattle.location}}</mat-card-subtitle>
+      <img height="150px" src={{azBattle.img_url}} alt="">
+      <hr>
+      <mat-grid-list cols="4" rowHeight="420px" gutterSize="15px">
+        <mat-grid-tile *ngFor="let pokemon of azBattle.team" [colspan]="colspan">
+          <mat-card class="poke-card">
+            <mat-card-title>{{pokemon.pokemon}}</mat-card-title>
+            <a routerLink="/{{pokemon.pokemon | lowercase}}">
+              <img mat-card-sm-image src={{pokemon.img_url}} alt="">
+            </a>
+            <mat-card-content>
+              <p>Level {{pokemon.level}}</p>
+              <span>Type: </span>
+              <span *ngFor="let type of pokemon.type" class="type {{type | lowercase}}">{{type}} </span>
+              <mat-list>
+                <mat-list-item *ngFor="let move of pokemon.moves">
+                  <mat-divider></mat-divider>
+                  {{move}}
+                </mat-list-item>
+              </mat-list>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-card>
   </mat-tab>
 </mat-tab-group>

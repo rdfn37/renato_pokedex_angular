@@ -1,4 +1,4 @@
-import { Observable, tap } from 'rxjs';
+import { Observable, Subject, takeUntil, tap } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 
@@ -6,6 +6,7 @@ import { HomeService } from '../home.service';
 import { Pokemon } from '../models/pokemon';
 import { HomePokemon } from '../models/homePokemon';
 import { Poke } from '../models/poke';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 type gen = [number, number];
 
@@ -15,10 +16,6 @@ type gen = [number, number];
   styleUrls: ['./generation.component.scss'],
 })
 export class GenerationComponent implements OnInit {
-  // pokemonList = [] as Pokemon[];
-
-  // generation?: number;
-
   gen1: gen = [0, 151];
   gen2: gen = [151, 100];
   gen3: gen = [251, 135];
@@ -33,15 +30,63 @@ export class GenerationComponent implements OnInit {
   pokemonList$?: Observable<HomePokemon[]>;
   pokemons = [] as Pokemon[];
 
+  // Responsivity
+  currentScreenSize!: string;
+  destroyed = new Subject<void>();
+
+  colspan!: number;
+
+  // Create a map to display breakpoint names for demonstration purposes.
+  displayNameMap = new Map([
+    [Breakpoints.XSmall, 'XSmall'],
+    [Breakpoints.Small, 'Small'],
+    [Breakpoints.Medium, 'Medium'],
+    [Breakpoints.Large, 'Large'],
+    [Breakpoints.XLarge, 'XLarge'],
+  ]);
+
   constructor(
     private route: ActivatedRoute,
     private homeService: HomeService,
-    private router: Router
+    private router: Router,
+    breakpointObserver: BreakpointObserver
   ) {
+    breakpointObserver
+      .observe([
+        Breakpoints.XSmall,
+        Breakpoints.Small,
+        Breakpoints.Medium,
+        Breakpoints.Large,
+        Breakpoints.XLarge,
+      ])
+      .pipe(takeUntil(this.destroyed))
+      .subscribe((result) => {
+        for (const query of Object.keys(result.breakpoints)) {
+          if (result.breakpoints[query]) {
+            this.currentScreenSize =
+              this.displayNameMap.get(query) ?? 'Unknown';
+
+            switch (this.currentScreenSize) {
+              case 'XSmall':
+                this.colspan = 6
+                break;
+              case 'Small':
+                this.colspan = 4;
+                break;
+              case 'Medium':
+                this.colspan = 3;
+                break;
+              default:
+                this.colspan = 2;
+            }
+          }
+        }
+      });
+
     router.events.forEach((event) => {
-      if(event instanceof NavigationEnd) {
-        this.pokemons = []
-        this.genList()
+      if (event instanceof NavigationEnd) {
+        this.pokemons = [];
+        this.genList();
       }
     });
   }
@@ -90,6 +135,10 @@ export class GenerationComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
+  ngOnDestroy() {
+    this.destroyed.next();
+    this.destroyed.complete();
   }
+
+  ngOnInit(): void {}
 }

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable, tap } from 'rxjs';
+import { AzBattle } from '../modelsG/az-battle';
 
 import { Gym } from '../modelsG/gym';
 import { LeagueMembers } from '../modelsG/league-members';
@@ -42,5 +43,11 @@ export class XyService {
     const url = this.baseUrl + '/xy_lysandre_battles';
 
     return this.http.get<LysandreBattle[]>(url);
+  }
+
+  getAzBattle(): Observable<AzBattle[]> {
+    const url = this.baseUrl + '/xy_az_battles';
+
+    return this.http.get<AzBattle[]>(url);
   }
 }

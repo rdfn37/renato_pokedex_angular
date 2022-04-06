@@ -1,4 +1,4 @@
-<ng-container>
+<!-- <ng-container>
   <div class="container-fluid">
       <div class="container" *ngIf="pokemons.length > 0">
         <mat-card *ngFor="let pokemon of pokemons" class="cosmog-black card-main poke-card" MatPaginatorIntl>
@@ -15,4 +15,21 @@
         </mat-card>
       </div>
   </div>
-</ng-container>
+</ng-container> -->
+
+<mat-grid-list *ngIf="pokemons.length > 0" cols="12" rowHeight="230px" gutterSize="1px" class="grid">
+  <mat-grid-tile *ngFor="let pokemon of pokemons" class="tile" [colspan]="colspan">
+    <a routerLink="/{{pokemon.species.name}}">
+      <mat-card class="poke-card cosmog-black">
+        <img mat-card-md-image src={{pokemon.sprites.front_default}} alt={{pokemon.species.name}}>
+        <mat-card-title>{{pokemon.species.name | titlecase}}</mat-card-title>
+        <mat-card-subtitle> #{{pokemon.id}} </mat-card-subtitle>
+        <mat-card-content>
+          <span *ngFor="let type of pokemon.types" class="type {{type.type.name}}">
+            {{type.type.name | titlecase}}
+          </span>
+        </mat-card-content>
+      </mat-card>
+    </a>
+  </mat-grid-tile>
+</mat-grid-list>

@@ -1,14 +1,14 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import { XyRoutingModule } from './xy-routing.module';
-import { XyGymsComponent } from './xy-gyms/xy-gyms.component';
 import { AppMaterialModule } from '../app-shared/app-material/app-material.module';
+import { XyBattlesComponent } from './xy-battles/xy-battles.component';
+import { XyRoutingModule } from './xy-routing.module';
 
 
 @NgModule({
   declarations: [
-    XyGymsComponent
+    XyBattlesComponent
   ],
   imports: [
     CommonModule,

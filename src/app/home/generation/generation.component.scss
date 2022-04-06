@@ -10,7 +10,19 @@
 }
 
 .poke-card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
   margin: 10px;
+}
+
+.tile {
+  border-radius: 15px;
 }
 
 .type {
@@ -27,4 +39,8 @@
   display: flex;
   justify-content: space-between;
   width: 80%;
+}
+
+a {
+  text-decoration: none;
 }

@@ -1,19 +1,20 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Observable, Subject, takeUntil } from 'rxjs';
+import { AzBattle } from 'src/app/modelsG/az-battle';
 import { Gym } from 'src/app/modelsG/gym';
 import { LysandreBattle } from 'src/app/modelsG/lysandre-battle';
 import { RivalBattle } from 'src/app/modelsG/rival-battle';
 
 import { XyService } from '../xy.service';
-import { LeagueMembers } from './../../modelsG/league-members';
+import { LeagueMembers } from '../../modelsG/league-members';
 
 @Component({
-  selector: 'app-xy-gyms',
-  templateUrl: './xy-gyms.component.html',
-  styleUrls: ['./xy-gyms.component.scss'],
+  selector: 'app-xy-battles',
+  templateUrl: './xy-battles.component.html',
+  styleUrls: ['./xy-battles.component.scss'],
 })
-export class XyGymsComponent implements OnInit, OnDestroy {
+export class XyBattlesComponent implements OnInit, OnDestroy {
   gyms$?: Observable<Gym[]>;
 
   leagueMembers$?: Observable<LeagueMembers[]>;
@@ -21,6 +22,8 @@ export class XyGymsComponent implements OnInit, OnDestroy {
   rivalBattles$?: Observable<RivalBattle[]>;
 
   lysandreBattles$?: Observable<LysandreBattle[]>;
+
+  azBattle$?: Observable<AzBattle[]>;
 
   currentScreenSize!: string;
   destroyed = new Subject<void>();
@@ -81,5 +84,6 @@ export class XyGymsComponent implements OnInit, OnDestroy {
     this.leagueMembers$ = this.xyService.getLeagueMembers();
     this.rivalBattles$ = this.xyService.getRivalBattles();
     this.lysandreBattles$ = this.xyService.getLysandreBattle();
+    this.azBattle$ = this.xyService.getAzBattle();
   }
 }

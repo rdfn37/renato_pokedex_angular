@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { XyGymsComponent } from './xy-gyms.component';
+import { XyBattlesComponent } from './xy-battles.component';
 
-describe('XyGymsComponent', () => {
-  let component: XyGymsComponent;
-  let fixture: ComponentFixture<XyGymsComponent>;
+describe('XyBattlesComponent', () => {
+  let component: XyBattlesComponent;
+  let fixture: ComponentFixture<XyBattlesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ XyGymsComponent ]
+      declarations: [ XyBattlesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(XyGymsComponent);
+    fixture = TestBed.createComponent(XyBattlesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
