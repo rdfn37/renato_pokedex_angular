@@ -1,50 +1,100 @@
-<div class="container" *ngIf="pokemon">
-  <mat-card class="my-2 card-main">
-    <div class="container">
-      <div class="row">
-        <div class="img col-6 col-xl-4">
-          <h1 class="mat-h1 mx-4 my-0">{{pokemon.species.name|titlecase}}</h1>
-          <img mat-card-xl-image src="{{pokemon['sprites']['other']['official-artwork']['front_default']}}" alt={{pokemon.species.name}}>
-        </div>
-        <div class="info col-12 col-md-6 col-xl-4">
-          <h2>Pokédex Data</h2>
-          <p>National Nº: {{pokemon.id}}</p>
-          <hr>
-          <div>
-            Type:
-            <span *ngFor="let type of pokemon.types" class="type {{type.type.name}}">
-              {{type.type.name | titlecase}}
-            </span>
-          </div>
-          <hr>
-          <div>
-            <span>Height: {{pokemon.height}}</span>
-          </div>
-          <hr>
-          <div>
-            <span>Weight: {{pokemon.weight}}</span>
-          </div>
-          <hr>
-          <div>
+<section *ngIf="pokemon$ | async as pokemon">
+  <h1>{{pokemon.species.name | titlecase}}</h1>
+  <mat-grid-list cols="12" rowHeight="400px">
+    <mat-grid-tile [colspan]="colspan" class="d-flex flex-column">
+      <img height="300px" src="{{pokemon.sprites.other['official-artwork'].front_default}}" alt="">
+      <mat-list *ngIf="currentScreenSize === 'Large' || currentScreenSize === 'Medium'">
+        <h2>Pokédex Data</h2>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          National Nº: {{pokemon.id}}
+        </mat-list-item>
+        <mat-divider></mat-divider>
+
+        <mat-list-item>
+          Type:
+          <span *ngFor="let e of pokemon.types" class="type {{e.type.name}}">
+            {{e.type.name | titlecase}}
+          </span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+
+        <mat-list-item>
+          Height: {{pokemon.height}}
+        </mat-list-item>
+        <mat-divider></mat-divider>
+
+        <mat-list-item>
+          Weight: {{pokemon.weight}}
+        </mat-list-item>
+        <mat-divider></mat-divider>
+
+        <mat-list-item>
+          <p matLine>
             Abilities:
-            <span *ngFor="let ability of pokemon.abilities" class="ability">
-              {{ability.ability.name | titlecase}}
-            </span>
-          </div>
-        </div>
-        <div class="stats col-12 col-xl-4 mt-5 p-0">
-          <table class="table">
-            <tr *ngFor="let stat of pokemon.stats">
-              <th scope="row" class="">{{stat.stat.name | titlecase}}</th>
-              <td>{{stat.base_stat}}</td>
-            </tr>
-            <tr>
-              <th scope="row">Total</th>
-              <td>{{baseTotal}}</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-  </mat-card>
-</div>
+          </p>
+          <p matLine *ngFor="let e of pokemon.abilities" class="ability">
+            {{e.ability.name | titlecase}}
+          </p>
+        </mat-list-item>
+      </mat-list>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="colspan" *ngIf="currentScreenSize === 'Small' || currentScreenSize === 'XSmall'">
+      <mat-list>
+        <h2>Pokédex Data</h2>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          National Nº: {{pokemon.id}}
+        </mat-list-item>
+        <mat-divider></mat-divider>
+
+        <mat-list-item>
+          Type:
+          <span *ngFor="let e of pokemon.types" class="type {{e.type.name}}">
+            {{e.type.name | titlecase}}
+          </span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+
+        <mat-list-item>
+          Height: {{pokemon.height}}
+        </mat-list-item>
+        <mat-divider></mat-divider>
+
+        <mat-list-item>
+          Weight: {{pokemon.weight}}
+        </mat-list-item>
+        <mat-divider></mat-divider>
+
+        <mat-list-item>
+          <p matLine>
+            Abilities:
+          </p>
+          <p matLine *ngFor="let e of pokemon.abilities" class="ability">
+            {{e.ability.name | titlecase}}
+          </p>
+        </mat-list-item>
+      </mat-list>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="colspan">
+        <table mat-table [dataSource]="pokemon.stats" class="mat-elevation-z8">
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Stat </th>
+            <td mat-cell *matCellDef="let element"> {{element.stat.name | titlecase}} </td>
+            <td mat-footer-cell *matFooterCellDef> Total </td>
+          </ng-container>
+
+          <ng-container matColumnDef="base_stat">
+            <th mat-header-cell *matHeaderCellDef> Base Stat </th>
+            <td mat-cell *matCellDef="let element"> {{element.base_stat}} </td>
+            <td mat-footer-cell *matFooterCellDef> {{baseTotal}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+        </table>
+    </mat-grid-tile>
+  </mat-grid-list>
+</section>

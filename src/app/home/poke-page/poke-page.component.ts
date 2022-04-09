@@ -1,6 +1,7 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable, Subject, takeUntil } from 'rxjs';
 
 import { Pokemon } from '../models/pokemon';
 import { HomeService } from './../home.service';
@@ -11,26 +12,81 @@ import { HomeService } from './../home.service';
   styleUrls: ['./poke-page.component.scss'],
 })
 export class PokePageComponent implements OnInit {
-  constructor(private route: ActivatedRoute, private homeService: HomeService) {}
+  // Responsivity
+  currentScreenSize!: string;
+  destroyed = new Subject<void>();
 
-  private readonly urlBase = "https://pokeapi.co/api/v2/pokemon/"
+  colspan!: number;
 
-  pokemon?: Pokemon
+  statSpan!: number
 
-  baseTotal = 0
+  // Create a map to display breakpoint names for demonstration purposes.
+  displayNameMap = new Map([
+    [Breakpoints.XSmall, 'XSmall'],
+    [Breakpoints.Small, 'Small'],
+    [Breakpoints.Medium, 'Medium'],
+    [Breakpoints.Large, 'Large'],
+    [Breakpoints.XLarge, 'XLarge'],
+  ]);
 
-  displayedColumns: string[] = ['name', 'base_stat'];
+  displayedColumns = ['name', 'base_stat'];
+
+  constructor(
+    private route: ActivatedRoute,
+    private homeService: HomeService,
+    breakpointObserver: BreakpointObserver
+  ) {
+    breakpointObserver
+      .observe([
+        Breakpoints.XSmall,
+        Breakpoints.Small,
+        Breakpoints.Medium,
+        Breakpoints.Large,
+        Breakpoints.XLarge,
+      ])
+      .pipe(takeUntil(this.destroyed))
+      .subscribe((result) => {
+        for (const query of Object.keys(result.breakpoints)) {
+          if (result.breakpoints[query]) {
+            this.currentScreenSize =
+              this.displayNameMap.get(query) ?? 'Unknown';
+
+            switch (this.currentScreenSize) {
+              case 'XSmall':
+                this.colspan = 12;
+                break;
+              case 'Small':
+                this.colspan = 12;
+                break;
+              case 'Medium':
+                this.colspan = 6;
+                break;
+              default:
+                this.colspan = 6;
+            }
+          }
+        }
+      });
+  }
+
+  private readonly urlBase = 'https://pokeapi.co/api/v2/pokemon/';
+
+  pokemon$!: Observable<Pokemon>;
+
+  baseTotal = 0;
+
+  // displayedColumns: string[] = ['stat', 'value'];
 
   ngOnInit(): void {
     const id: number = this.route.snapshot.params['id'];
-    this.homeService.getPokemon(this.urlBase + id).subscribe({
+    this.pokemon$ = this.homeService.getPokemon(this.urlBase + id);
+
+    this.pokemon$.subscribe({
       next: data => {
-        this.pokemon = data
-        this.pokemon?.stats.forEach(stat => {
+        data.stats.forEach(stat => {
           this.baseTotal += stat.base_stat
         })
       }
     })
-
   }
 }

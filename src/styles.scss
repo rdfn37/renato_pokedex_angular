@@ -36,9 +36,10 @@ $dark-theme: mat.define-light-theme(
 
 @include mat.all-component-themes($my-theme);
 
-$primary: #212121;
-$secondary: #323232;
-$accent: #FF1E56;
+$primary: #082032;
+$secondary: #2C394B;
+$var: #334756;
+$accent: #FF4C29;
 
 // $primary: #212121;
 // $secondary: #01579B;
@@ -55,6 +56,9 @@ body {
   background-color: $secondary;
 }
 
+.back-var {
+  background-color: $var;
+}
 .back-primary {
   background-color: $primary;
 }

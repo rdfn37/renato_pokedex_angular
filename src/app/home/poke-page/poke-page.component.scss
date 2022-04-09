@@ -1,38 +1,89 @@
+@import "src/styles.scss";
+
+h1 {
+  text-align: center;
+  color: #FFF;
+}
+
+mat-grid-list {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+// mat-grid-tile {
+//   background-color: red;
+// }
+
+[mat-table] {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 5px;
+  background-color: $primary;
+  justify-self: start;
+}
+
+.mat-header-cell {
+  color: #111;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.mat-cell {
+  border-bottom: solid 1px $accent;
+}
+
+.mat-row:nth-child(even) {background-color: $secondary;}
+
+.mat-header-row {
+  background-color: $accent;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+  h2 {
+    color: #FFF;
+    text-align: center;
+  }
+
+  img {
+    height: 300px;
+  }
+}
+
+mat-list {
+  h2 {
+    color: #FFF;
+  }
+}
+
+mat-list-item {
+  span {
+    margin-left: 5px;
+  }
+}
+
+.pokedex-data {
+  width: fit-content;
+}
+
+.stats {
+  width: 300px;
+}
+
 .type {
   padding: 5px;
-  margin-right: 10px;
-  color: #FFF;
+  margin-left: 2px;
   border-radius: 5px;
-  height: fit-content;
 }
-.mat-card {
-  display: flex;
-}
-.info {
-  div{
-    margin-bottom: 10px;
-  }
-}
+
 .ability {
-  background-color: #999;
   padding: 5px;
+  margin-left: 2px;
   border-radius: 5px;
-  margin-right: 10px;
-}
-
-.container {
-  min-height: 73vh;
-}
-
-table {
-  width: 300px;
-  background-color: lightgrey;
-  border-radius: 5px;
-  th, td {
-    padding: 5px;
-  }
-  tr:hover {
-    background-color: #999;
-  }
-  border: 1px;
+  // background-color: $primary;
 }

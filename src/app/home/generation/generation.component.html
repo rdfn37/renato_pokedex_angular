@@ -1,7 +1,7 @@
 <mat-grid-list *ngIf="pokemons.length > 0" cols="12" rowHeight="220px" gutterSize="30px" class="grid">
   <mat-grid-tile *ngFor="let pokemon of pokemons" class="tile" [colspan]="colspan">
     <a routerLink="/{{pokemon.species.name}}">
-      <mat-card class="poke-card back-primary">
+      <mat-card class="poke-card back-var">
         <img mat-card-md-image src={{pokemon.sprites.front_default}} alt={{pokemon.species.name}}>
         <mat-card-title>{{pokemon.species.name | titlecase}}</mat-card-title>
         <mat-card-subtitle> #{{pokemon.id}} </mat-card-subtitle>
