@@ -96,5 +96,10 @@
           <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
         </table>
     </mat-grid-tile>
+    <ng-container *ngIf="evolutionChain$ | async as evolutionChain">
+      <mat-grid-tile [colspan]="colspan" *ngIf="evolutionChain.chain.evolves_to.length > 0">
+        <h1>{{evolutionChain.id}}</h1>
+      </mat-grid-tile>
+    </ng-container>
   </mat-grid-list>
 </section>

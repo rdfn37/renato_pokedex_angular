@@ -1,0 +1,44 @@
+@import "src/styles.scss";
+
+.card-main {
+  margin: 10px;
+  padding: 20px;
+}
+
+.type {
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+[mat-card-sm-image] {
+  margin-bottom: 20px;
+}
+
+.poke-info {
+  height: 100%;
+  width: 300px;
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary;
+}
+
+// .gym-leader-frame {
+//   padding: 10px;
+//   background-color: #FFF;
+//   border-radius: 5px;
+//   width: 240px;
+//   height: 200px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+mat-card-content {
+  p {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,554 @@
+[
+  {
+    "location": "Gym #1 - Striaton City Gym",
+    "leader": [
+      {
+        "name": "Gym Leader Chili",
+        "img_url": "https://www.serebii.net/pokearth/trainers/bw/10.png",
+        "team": [
+          {
+            "name": "Lillipup",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/506.png",
+            "level": "Level 12",
+            "type": [
+              "/pokedex-bw/type/normal.gif"
+            ],
+            "ability": "Vital Spirit",
+            "moves": [
+              "Bite",
+              "Work Up",
+              "Odor Sleuth",
+              "Helping Hand"
+            ]
+          },
+          {
+            "name": "Pansear",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/513.png",
+            "level": "Level 14",
+            "type": [
+              "/pokedex-bw/type/fire.gif"
+            ],
+            "ability": "Gluttony",
+            "moves": [
+              "Incinerate",
+              "Work Up",
+              "Lick",
+              "Fury Swipes"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gym Leader Cilan",
+        "img_url": "https://www.serebii.net/pokearth/trainers/bw/11.png",
+        "team": [
+          {
+            "name": "Lillipup",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/506.png",
+            "level": "Level 12",
+            "type": [
+              "/pokedex-bw/type/normal.gif"
+            ],
+            "ability": "Vital Spirit",
+            "moves": [
+              "Bite",
+              "Work Up",
+              "Odor Sleuth",
+              "Helping Hand"
+            ]
+          },
+          {
+            "name": "Pansage",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/511.png",
+            "level": "Level 14",
+            "type": [
+              "/pokedex-bw/type/grass.gif"
+            ],
+            "ability": "Gluttony",
+            "moves": [
+              "Vine Whip",
+              "Work Up",
+              "Lick",
+              "Fury Swipes"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gym Leader Cress",
+        "img_url": "https://www.serebii.net/pokearth/trainers/bw/12.png",
+        "team": [
+          {
+            "name": "Lillipup",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/506.png",
+            "level": "Level 12",
+            "type": [
+              "/pokedex-bw/type/normal.gif"
+            ],
+            "ability": "Vital Spirit",
+            "moves": [
+              "Bite",
+              "Work Up",
+              "Odor Sleuth",
+              "Helping Hand"
+            ]
+          },
+          {
+            "name": "Panpour",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/515.png",
+            "level": "Level 14",
+            "type": [
+              "/pokedex-bw/type/water.gif"
+            ],
+            "ability": "Gluttony",
+            "moves": [
+              "Water Gun",
+              "Work Up",
+              "Lick",
+              "Fury Swipes"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "location": "Gym #2 - Nacrene City Gym",
+    "leader": [
+      {
+        "name": "Gym Leader Lenora",
+        "img_url": "https://www.serebii.net/pokearth/trainers/bw/19.png",
+        "team": [
+          {
+            "name": "Herdier",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/507.png",
+            "level": "Level 18",
+            "type": [
+              "/pokedex-bw/type/normal.gif"
+            ],
+            "ability": "Intimidate",
+            "moves": [
+              "Take Down",
+              "Bite",
+              "Retaliate",
+              "Leer"
+            ]
+          },
+          {
+            "name": "Watchog",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/505.png",
+            "level": "Level 20",
+            "type": [
+              "/pokedex-bw/type/normal.gif"
+            ],
+            "ability": "Illuminate",
+            "moves": [
+              "Leer",
+              "Crunch",
+              "Retaliate",
+              "Hypnosis"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "location": "Gym #3 - Castelia City Gym",
+    "leader": [
+      {
+        "name": "Gym Leader Burgh",
+        "img_url": "https://www.serebii.net/pokearth/trainers/bw/20.png",
+        "team": [
+          {
+            "name": "Whirlipede",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/544.png",
+            "level": "Level 21",
+            "type": [
+              "/pokedex-bw/type/bug.gif",
+              "/pokedex-bw/type/poison.gif"
+            ],
+            "ability": "Poison Point",
+            "moves": [
+              "Poison Tail",
+              "Struggle Bug",
+              "Pursuit",
+              "Screech"
+            ]
+          },
+          {
+            "name": "Dwebble",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/557.png",
+            "level": "Level 21",
+            "type": [
+              "/pokedex-bw/type/bug.gif",
+              "/pokedex-bw/type/rock.gif"
+            ],
+            "ability": "Sturdy",
+            "moves": [
+              "Smack Down",
+              "Struggle Bug",
+              "Faint Attack",
+              "Sand-attack"
+            ]
+          },
+          {
+            "name": "Leavanny",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/542.png",
+            "level": "Level 23",
+            "type": [
+              "/pokedex-bw/type/bug.gif",
+              "/pokedex-bw/type/grass.gif"
+            ],
+            "ability": "Swarm",
+            "moves": [
+              "Razor Leaf",
+              "Struggle Bug",
+              "String Shot",
+              "Protect"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "location": "Gym #4 - Nimbasa City Gym",
+    "leader": [
+      {
+        "name": "Gym Leader Elesa",
+        "img_url": "https://www.serebii.net/pokearth/trainers/bw/21.png",
+        "team": [
+          {
+            "name": "Emolga",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/587.png",
+            "level": "Level 25",
+            "type": [
+              "/pokedex-bw/type/electric.gif",
+              "/pokedex-bw/type/flying.gif"
+            ],
+            "ability": "Static",
+            "moves": [
+              "Pursuit",
+              "Quick Attack",
+              "Volt Switch",
+              "Aerial Ace"
+            ]
+          },
+          {
+            "name": "Emolga",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/587.png",
+            "level": "Level 25",
+            "type": [
+              "/pokedex-bw/type/electric.gif",
+              "/pokedex-bw/type/flying.gif"
+            ],
+            "ability": "Static",
+            "moves": [
+              "Pursuit",
+              "Quick Attack",
+              "Volt Switch",
+              "Aerial Ace"
+            ]
+          },
+          {
+            "name": "Zebstrika",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/523.png",
+            "level": "Level 27",
+            "type": [
+              "/pokedex-bw/type/electric.gif"
+            ],
+            "ability": "Lightningrod",
+            "moves": [
+              "Quick Attack",
+              "Spark",
+              "Volt Switch",
+              "Flame Charge"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "location": "Gym #5 - Driftveil City Gym",
+    "leader": [
+      {
+        "name": "Gym Leader Clay",
+        "img_url": "https://www.serebii.net/pokearth/trainers/bw/22.png",
+        "team": [
+          {
+            "name": "Krokorok",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/552.png",
+            "level": "Level 29",
+            "type": [
+              "/pokedex-bw/type/ground.gif",
+              "/pokedex-bw/type/dark.gif"
+            ],
+            "ability": "Intimidate",
+            "moves": [
+              "Crunch",
+              "Swagger",
+              "Bulldoze",
+              "Torment"
+            ]
+          },
+          {
+            "name": "Palpitoad",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/536.png",
+            "level": "Level 29",
+            "type": [
+              "/pokedex-bw/type/water.gif",
+              "/pokedex-bw/type/ground.gif"
+            ],
+            "ability": "Swift Swim",
+            "moves": [
+              "Muddy Water",
+              "Aqua Ring",
+              "Bulldoze",
+              "Bubblebeam"
+            ]
+          },
+          {
+            "name": "Excadrill",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/530.png",
+            "level": "Level 31",
+            "type": [
+              "/pokedex-bw/type/ground.gif",
+              "/pokedex-bw/type/steel.gif"
+            ],
+            "ability": "Sand Rush",
+            "moves": [
+              "Slash",
+              "Rock Slide",
+              "Bulldoze",
+              "Hone Claws"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "location": "Gym #6 - Mistralton City Gym",
+    "leader": [
+      {
+        "name": "Gym Leader Skyla",
+        "img_url": "https://www.serebii.net/pokearth/trainers/bw/23.png",
+        "team": [
+          {
+            "name": "Swoobat",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/528.png",
+            "level": "Level 33",
+            "type": [
+              "/pokedex-bw/type/psychic.gif",
+              "/pokedex-bw/type/flying.gif"
+            ],
+            "ability": "Unaware",
+            "moves": [
+              "Heart Stamp",
+              "Amnesia",
+              "Acrobatics",
+              "Assurance"
+            ]
+          },
+          {
+            "name": "Unfezant",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/521-f.png",
+            "level": "Level 33",
+            "type": [
+              "/pokedex-bw/type/normal.gif",
+              "/pokedex-bw/type/flying.gif"
+            ],
+            "ability": "Big Pecks",
+            "moves": [
+              "Quick Attack",
+              "Air Slash",
+              "Leer",
+              "Razor Wind"
+            ]
+          },
+          {
+            "name": "Swanna",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/581.png",
+            "level": "Level 35",
+            "type": [
+              "/pokedex-bw/type/water.gif",
+              "/pokedex-bw/type/flying.gif"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Aqua Ring",
+              "Aerial Ace",
+              "Air Slash",
+              "Bubblebeam"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "location": "Gym #7 - Icirrus City Gym",
+    "leader": [
+      {
+        "name": "Gym Leader Brycen",
+        "img_url": "https://www.serebii.net/pokearth/trainers/bw/54.png",
+        "team": [
+          {
+            "name": "Vanillish",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/583.png",
+            "level": "Level 37",
+            "type": [
+              "/pokedex-bw/type/ice.gif"
+            ],
+            "ability": "Ice Body",
+            "moves": [
+              "Mirror Shot",
+              "Acid Armor",
+              "Frost Breath",
+              "Astonish"
+            ]
+          },
+          {
+            "name": "Cryogonal",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/615.png",
+            "level": "Level 37",
+            "type": [
+              "/pokedex-bw/type/ice.gif"
+            ],
+            "ability": "Levitate",
+            "moves": [
+              "Reflect",
+              "Aurora Beam",
+              "Frost Breath",
+              "Rapid Spin"
+            ]
+          },
+          {
+            "name": "Beartic",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/614.png",
+            "level": "Level 39",
+            "type": [
+              "/pokedex-bw/type/ice.gif"
+            ],
+            "ability": "Snow Cloak",
+            "moves": [
+              "Slash",
+              "Brine",
+              "Icicle Crash",
+              "Swagger"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "location": "Gym #8 - Opelucid City Gym",
+    "leader": [
+      {
+        "name": "Gym Leader Drayden",
+        "img_url": "https://www.serebii.net/pokearth/trainers/bw/56.png",
+        "team": [
+          {
+            "name": "Fraxure",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/611.png",
+            "level": "Level 41",
+            "type": [
+              "/pokedex-bw/type/dragon.gif"
+            ],
+            "ability": "Rivalry",
+            "moves": [
+              "Dragon Dance",
+              "Dragon Rage",
+              "Dragon Tail",
+              "Assurance"
+            ]
+          },
+          {
+            "name": "Druddigon",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/621.png",
+            "level": "Level 41",
+            "type": [
+              "/pokedex-bw/type/dragon.gif"
+            ],
+            "ability": "Rough Skin",
+            "moves": [
+              "Chip Away",
+              "Revenge",
+              "Dragon Tail",
+              "Night Slash"
+            ]
+          },
+          {
+            "name": "Haxorus",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/612.png",
+            "level": "Level 43",
+            "type": [
+              "/pokedex-bw/type/dragon.gif"
+            ],
+            "ability": "Mold Breaker",
+            "moves": [
+              "Dragon Dance",
+              "Slash",
+              "Dragon Tail",
+              "Assurance"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gym Leader Iris",
+        "img_url": "https://www.serebii.net/pokearth/trainers/bw/55.png",
+        "team": [
+          {
+            "name": "Fraxure",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/611.png",
+            "level": "Level 41",
+            "type": [
+              "/pokedex-bw/type/dragon.gif"
+            ],
+            "ability": "Rivalry",
+            "moves": [
+              "Dragon Dance",
+              "Dragon Rage",
+              "Dragon Tail",
+              "Assurance"
+            ]
+          },
+          {
+            "name": "Druddigon",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/621.png",
+            "level": "Level 41",
+            "type": [
+              "/pokedex-bw/type/dragon.gif"
+            ],
+            "ability": "Sheer Force",
+            "moves": [
+              "Chip Away",
+              "Revenge",
+              "Dragon Tail",
+              "Night Slash"
+            ]
+          },
+          {
+            "name": "Haxorus",
+            "img_url": "https://www.serebii.net/blackwhite/pokemon/612.png",
+            "level": "Level 43",
+            "type": [
+              "/pokedex-bw/type/dragon.gif"
+            ],
+            "ability": "Mold Breaker",
+            "moves": [
+              "Dragon Dance",
+              "Slash",
+              "Dragon Tail",
+              "Assurance"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

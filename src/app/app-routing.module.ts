@@ -8,17 +8,17 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'home',
+    redirectTo: 'xy',
   },
   {
     path: 'meowstic',
     pathMatch: 'full',
-    redirectTo: 'meowstic-male'
+    redirectTo: 'meowstic-male',
   },
   {
     path: 'mr. mime',
     pathMatch: 'full',
-    redirectTo: 'mr-mime'
+    redirectTo: 'mr-mime',
   },
   {
     path: 'home',
@@ -29,6 +29,10 @@ const routes: Routes = [
     loadChildren: () => import('./xy/xy.module').then((m) => m.XyModule),
   },
   {
+    path: 'bw',
+    loadChildren: () => import('./bw/bw.module').then((m) => m.BwModule),
+  },
+  {
     path: ':id',
     component: PokePageComponent,
   },
@@ -36,6 +40,11 @@ const routes: Routes = [
     path: 'gen/:id',
     component: GenerationComponent,
   },
+  {
+    path: '**',
+    pathMatch: 'full',
+    redirectTo: 'home',
+  }
 ];
 
 @NgModule({

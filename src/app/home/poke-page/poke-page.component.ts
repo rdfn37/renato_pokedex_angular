@@ -1,3 +1,4 @@
+import { EvolutionChain } from './../models/evolution-chain';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -18,7 +19,7 @@ export class PokePageComponent implements OnInit {
 
   colspan!: number;
 
-  statSpan!: number
+  statSpan!: number;
 
   // Create a map to display breakpoint names for demonstration purposes.
   displayNameMap = new Map([
@@ -30,6 +31,8 @@ export class PokePageComponent implements OnInit {
   ]);
 
   displayedColumns = ['name', 'base_stat'];
+
+  evolutionChain$?: Observable<EvolutionChain>;
 
   constructor(
     private route: ActivatedRoute,
@@ -82,11 +85,21 @@ export class PokePageComponent implements OnInit {
     this.pokemon$ = this.homeService.getPokemon(this.urlBase + id);
 
     this.pokemon$.subscribe({
-      next: data => {
-        data.stats.forEach(stat => {
-          this.baseTotal += stat.base_stat
-        })
-      }
-    })
+      next: (data) => {
+        data.stats.forEach((stat) => {
+          this.baseTotal += stat.base_stat;
+        }),
+          this.homeService.getSpecie(data.species.url).subscribe({
+            next: (data) => {
+              // console.log(data.evolution_chain.url);
+              this.homeService.getEvolutionChain(data.evolution_chain.url).subscribe({
+                next: data => console.log(data)
+              })
+              this.evolutionChain$ = this.homeService
+                .getEvolutionChain(data.evolution_chain.url)
+            },
+          });
+      },
+    });
   }
 }
