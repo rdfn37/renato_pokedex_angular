@@ -17,36 +17,37 @@ type ApiResponse = {
 })
 export class XyService {
   // private readonly baseUrl = 'http://localhost:3000';
-  private readonly baseUrl = 'https://nuzlockedex-api.herokuapp.com';
+  // private readonly baseUrl = 'https://nuzlockedex-api.herokuapp.com';
+  private readonly baseUri = '../../assets/pkmn_xy'
 
   constructor(private http: HttpClient) {}
 
   getGyms(): Observable<Gym[]> {
-    const url = this.baseUrl + '/xy_gyms';
+    const url = this.baseUri + '/gyms.json';
 
     return this.http.get<Gym[]>(url);
   }
 
   getLeagueMembers(): Observable<LeagueMembers[]> {
-    const url = this.baseUrl + '/xy_league_members';
+    const url = this.baseUri + '/league.json';
 
     return this.http.get<LeagueMembers[]>(url);
   }
 
   getRivalBattles(): Observable<RivalBattle[]> {
-    const url = this.baseUrl + '/xy_rival_battles';
+    const url = this.baseUri + '/rival.json';
 
     return this.http.get<RivalBattle[]>(url);
   }
 
   getLysandreBattle(): Observable<LysandreBattle[]> {
-    const url = this.baseUrl + '/xy_lysandre_battles';
+    const url = this.baseUri + '/lysandre.json';
 
     return this.http.get<LysandreBattle[]>(url);
   }
 
   getAzBattle(): Observable<AzBattle[]> {
-    const url = this.baseUrl + '/xy_az_battles';
+    const url = this.baseUri + '/az.json';
 
     return this.http.get<AzBattle[]>(url);
   }

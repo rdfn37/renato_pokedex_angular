@@ -22,7 +22,7 @@
                   <img mat-card-sm-image src={{pokemon.img_url}} alt="">
                 </a>
                 <mat-card-content>
-                  <p>Level {{pokemon.level}}</p>
+                  <p>{{pokemon.level}}</p>
                   <span>Type: </span>
                   <span *ngFor="let type of pokemon.type" class="type {{type | lowercase}}">
                     <img src="https://www.serebii.net{{type}}" alt="">

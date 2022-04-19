@@ -1,0 +1,1271 @@
+[
+  {
+    "_id": "6249fad3af3c2ed02839adc6",
+    "order": "First",
+    "reward": "3,000",
+    "location": "Tower of Mastery",
+    "teams": [
+      {
+        "condition": "Chespin",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 28,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Light Screen",
+              "Psybeam",
+              "Dysarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 28,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Bite",
+              "Slash",
+              "Quick Attack"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Braixen",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/654.png",
+            "level": 30,
+            "type": [
+              "Fire"
+            ],
+            "ability": "Blaze",
+            "moves": [
+              "Psybeam",
+              "Fire Spin"
+            ],
+            "held_item": null
+          }
+        ]
+      },
+      {
+        "condition": "Fennekin",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 28,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Light Screen",
+              "Psybeam",
+              "Dysarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 28,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Bite",
+              "Slash",
+              "Quick Attack"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Frogadier",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/657.png",
+            "level": 30,
+            "type": [
+              "Wate"
+            ],
+            "ability": "Torrent",
+            "moves": [
+              "Quick Attack",
+              "Water Pulse"
+            ],
+            "held_item": null
+          }
+        ]
+      },
+      {
+        "condition": "Froakie",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 28,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Light Screen",
+              "Psybeam",
+              "Dysarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 28,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Bite",
+              "Slash",
+              "Quick Attack"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Quilladin",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/651.png",
+            "level": 30,
+            "type": [
+              "Grass"
+            ],
+            "ability": "Overgrow",
+            "moves": [
+              "Bite",
+              "Needle Arm"
+            ],
+            "held_item": null
+          }
+        ]
+      }
+    ],
+    "__v": 0,
+    "img_url": "https://www.serebii.net/pokearth/maps/kalos/60.jpg"
+  },
+  {
+    "_id": "6249fe4daf3c2ed02839adc8",
+    "order": "Second",
+    "reward": "3,300",
+    "location": "Coumarine City",
+    "teams": [
+      {
+        "condition": "Chespin",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 31,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Light Screen",
+              "Psybeam",
+              "Dysarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 31,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Bite",
+              "Slash",
+              "Quick Attack"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Braixen",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/654.png",
+            "level": 33,
+            "type": [
+              "Fire"
+            ],
+            "ability": "Blaze",
+            "moves": [
+              "Psybeam",
+              "Fire Spin"
+            ],
+            "held_item": null
+          }
+        ]
+      },
+      {
+        "condition": "Fennekin",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 31,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Light Screen",
+              "Psybeam",
+              "Dysarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 31,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Bite",
+              "Slash",
+              "Quick Attack"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Frogadier",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/657.png",
+            "level": 33,
+            "type": [
+              "Water"
+            ],
+            "ability": "Torrent",
+            "moves": [
+              "Quick Attack",
+              "Water Pulse"
+            ],
+            "held_item": null
+          }
+        ]
+      },
+      {
+        "condition": "Froakie",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 31,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Light Screen",
+              "Psybeam",
+              "Dysarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 31,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Bite",
+              "Slash",
+              "Quick Attack"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Quilladin",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/651.png",
+            "level": 33,
+            "type": [
+              "Grass"
+            ],
+            "ability": "Overgrow",
+            "moves": [
+              "Bite",
+              "Needle Arm"
+            ],
+            "held_item": null
+          }
+        ]
+      }
+    ],
+    "__v": 0,
+    "img_url": "https://www.serebii.net/pokearth/maps/kalos/37-coastal.jpg"
+  },
+  {
+    "_id": "6249fef8af3c2ed02839adca",
+    "order": "Third",
+    "reward": "3,700",
+    "location": "Route 14",
+    "teams": [
+      {
+        "condition": "Chespin",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 35,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Light Screen",
+              "Psychic",
+              "Disarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 35,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Bite",
+              "Slash",
+              "Quick Attack",
+              "Swords Dance"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Delphox",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png",
+            "level": 37,
+            "type": [
+              "Fire",
+              "Psychic"
+            ],
+            "ability": "Blaze",
+            "moves": [
+              "Psybeam",
+              "Mystical Fire"
+            ],
+            "held_item": null
+          }
+        ]
+      },
+      {
+        "condition": "Fennekin",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 35,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Light Screen",
+              "Psychic",
+              "Disarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 35,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Bite",
+              "Slash",
+              "Quick Attack",
+              "Swords Dance"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Greninja",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png",
+            "level": 37,
+            "type": [
+              "Water",
+              "Dark"
+            ],
+            "ability": "Torrent",
+            "moves": [
+              "Quick Attack",
+              "Water Shuriken"
+            ],
+            "held_item": null
+          }
+        ]
+      },
+      {
+        "condition": "Froakie",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 35,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Light Screen",
+              "Psychic",
+              "Disarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 35,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Bite",
+              "Slash",
+              "Quick Attack",
+              "Swords Dance"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Chesnaught",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/652.png",
+            "level": 37,
+            "type": [
+              "Grass",
+              "Fighting"
+            ],
+            "ability": "Overgrow",
+            "moves": [
+              "Bite",
+              "Seed Bomb"
+            ],
+            "held_item": null
+          }
+        ]
+      }
+    ],
+    "__v": 0,
+    "img_url": "https://www.serebii.net/pokearth/maps/kalos/14.jpg"
+  },
+  {
+    "_id": "6249ff73af3c2ed02839adcc",
+    "order": "Fourth",
+    "reward": "4,600",
+    "location": "Anistar City",
+    "teams": [
+      {
+        "condition": "Chespin",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 44,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Shadow Ball",
+              "Psychic",
+              "Disarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 44,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Night Slash",
+              "Slash",
+              "Quick Attack",
+              "Swords Dance"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Jolteon",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
+            "level": 44,
+            "type": [
+              "Electric"
+            ],
+            "ability": "Volt Absorb",
+            "moves": [
+              "Discharge",
+              "Quick Attack",
+              "Double Kick"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Delphox",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png",
+            "level": 46,
+            "type": [
+              "Fire",
+              "Psychic"
+            ],
+            "ability": "Blaze",
+            "moves": [
+              "Psychic",
+              "Flamethrower"
+            ],
+            "held_item": null
+          }
+        ]
+      },
+      {
+        "condition": "Fennekin",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 44,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Shadow Ball",
+              "Psychic",
+              "Disarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 44,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Night Slash",
+              "Slash",
+              "Quick Attack",
+              "Swords Dance"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Flareon",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+            "level": 44,
+            "type": [
+              "Fire"
+            ],
+            "ability": "Flash Fire",
+            "moves": [
+              "Lava Plume",
+              "Quick Attack",
+              "Bite"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Greninja",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png",
+            "level": 46,
+            "type": [
+              "Water",
+              "Dark"
+            ],
+            "ability": "Torrent",
+            "moves": [
+              "Dark Pulse",
+              "Water Shuriken"
+            ],
+            "held_item": null
+          }
+        ]
+      },
+      {
+        "condition": "Froakie",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 44,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Shadow Ball",
+              "Psychic",
+              "Disarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 44,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Night Slash",
+              "Slash",
+              "Quick Attack",
+              "Swords Dance"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Vaporeon",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+            "level": 44,
+            "type": [
+              "Water"
+            ],
+            "ability": "Water Absorb",
+            "moves": [
+              "Muddy Water",
+              "Quick Attack",
+              "Aurora Beam"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Chesnaught",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/652.png",
+            "level": 46,
+            "type": [
+              "Grass",
+              "Fighting"
+            ],
+            "ability": "Overgrow",
+            "moves": [
+              "Brick Break",
+              "Seed Bomb"
+            ],
+            "held_item": null
+          }
+        ]
+      }
+    ],
+    "__v": 0,
+    "img_url": "https://www.serebii.net/pokearth/maps/kalos/45.jpg"
+  },
+  {
+    "_id": "6249ffeaaf3c2ed02839adce",
+    "order": "Fifth",
+    "reward": "6,100",
+    "location": "Victory Road",
+    "teams": [
+      {
+        "condition": "Chespin",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 57,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Shadow Ball",
+              "Psychic",
+              "Disarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 59,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Night Slash",
+              "Slash",
+              "Quick Attack",
+              "Swords Dance"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Jolteon",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
+            "level": 57,
+            "type": [
+              "Electric"
+            ],
+            "ability": "Volt Absorb",
+            "moves": [
+              "Discharge",
+              "Quick Attack",
+              "Double Kick"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Altaria",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png",
+            "level": 58,
+            "type": [
+              "Dragon",
+              "Flying"
+            ],
+            "ability": "Natural Cure",
+            "moves": [
+              "Dragon Pulse",
+              "Dazzling Gleam",
+              "Confide"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Delphox",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png",
+            "level": 61,
+            "type": [
+              "Fire",
+              "Psychic"
+            ],
+            "ability": "Blaze",
+            "moves": [
+              "Psychic",
+              "Shadow Ball",
+              "Flamethrower"
+            ],
+            "held_item": null
+          }
+        ]
+      },
+      {
+        "condition": "Fennekin",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 57,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Shadow Ball",
+              "Psychic",
+              "Disarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 59,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Night Slash",
+              "Slash",
+              "Quick Attack",
+              "Swords Dance"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Flareon",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+            "level": 57,
+            "type": [
+              "Fire"
+            ],
+            "ability": "Flash Fire",
+            "moves": [
+              "Lava Plume",
+              "Quick Attack",
+              "Bite"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Altaria",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png",
+            "level": 58,
+            "type": [
+              "Dragon",
+              "Flying"
+            ],
+            "ability": "Natural Cure",
+            "moves": [
+              "Dragon Pulse",
+              "Dazzling Gleam",
+              "Confide"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Greninja",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png",
+            "level": 61,
+            "type": [
+              "Water",
+              "Dark"
+            ],
+            "ability": "Torrent",
+            "moves": [
+              "Dark Pulse",
+              "Ice Beam",
+              "Water Shuriken"
+            ],
+            "held_item": null
+          }
+        ]
+      },
+      {
+        "condition": "Froakie",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 57,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Shadow Ball",
+              "Psychic",
+              "Disarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 59,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Night Slash",
+              "Slash",
+              "Quick Attack",
+              "Swords Dance"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Vaporeon",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+            "level": 57,
+            "type": [
+              "Water"
+            ],
+            "ability": "Water Absorb",
+            "moves": [
+              "Muddy Water",
+              "Quick Attack",
+              "Aurora Beam"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Altaria",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png",
+            "level": 58,
+            "type": [
+              "Dragon",
+              "Flying"
+            ],
+            "ability": "Natural Cure",
+            "moves": [
+              "Dragon Pulse",
+              "Dazzling Gleam",
+              "Confide"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Chesnaught",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/652.png",
+            "level": 61,
+            "type": [
+              "Grass",
+              "Fighting"
+            ],
+            "ability": "Overgrow",
+            "moves": [
+              "Brick Break",
+              "Body Slam",
+              "Seed Bomb"
+            ],
+            "held_item": null
+          }
+        ]
+      }
+    ],
+    "__v": 0,
+    "img_url": "https://www.serebii.net/pokearth/maps/kalos/50.jpg"
+  },
+  {
+    "_id": "624a0063af3c2ed02839add0",
+    "order": "Rematch",
+    "reward": "7,000",
+    "location": "Kiloude City",
+    "teams": [
+      {
+        "condition": "Chespin",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 66,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Shadow Ball",
+              "Psychic",
+              "Disarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Clefable",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+            "level": 68,
+            "type": [
+              "Fairy"
+            ],
+            "ability": "Magic Guard",
+            "moves": [
+              "Moonblast",
+              "Focus Blast",
+              "Meteor Smash",
+              "Sing"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 68,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Night Slash",
+              "Slash",
+              "Quick Attack",
+              "Swords Dance"
+            ],
+            "held_item": "Absolite"
+          },
+          {
+            "pokemon": "Jolteon",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
+            "level": 66,
+            "type": [
+              "Electric"
+            ],
+            "ability": "Volt Absorb",
+            "moves": [
+              "Thunder",
+              "Quick Attack",
+              "Double Kick"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Altaria",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png",
+            "level": 67,
+            "type": [
+              "Dragon",
+              "Flying"
+            ],
+            "ability": "Natural Cure",
+            "moves": [
+              "Dragon Pulse",
+              "Dazzling Gleam",
+              "Confide"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Delphox",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png",
+            "level": 70,
+            "type": [
+              "Fire",
+              "Psychic"
+            ],
+            "ability": "Blaze",
+            "moves": [
+              "Fire Blast",
+              "Psychic",
+              "Shadow Ball"
+            ],
+            "held_item": null
+          }
+        ]
+      },
+      {
+        "condition": "Fennekin",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 66,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Shadow Ball",
+              "Psychic",
+              "Disarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Clefable",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+            "level": 68,
+            "type": [
+              "Fairy"
+            ],
+            "ability": "Magic Guard",
+            "moves": [
+              "Moonblast",
+              "Focus Blast",
+              "Meteor Smash",
+              "Sing"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 68,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Night Slash",
+              "Slash",
+              "Quick Attack",
+              "Swords Dance"
+            ],
+            "held_item": "Absolite"
+          },
+          {
+            "pokemon": "Flareon",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+            "level": 66,
+            "type": [
+              "Fire"
+            ],
+            "ability": "Flash Fire",
+            "moves": [
+              "Fire Blast",
+              "Quick Attack",
+              "Bite"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Altaria",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png",
+            "level": 67,
+            "type": [
+              "Dragon",
+              "Flying"
+            ],
+            "ability": "Natural Cure",
+            "moves": [
+              "Dragon Pulse",
+              "Dazzling Gleam",
+              "Confide"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Greninja",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png",
+            "level": 70,
+            "type": [
+              "Water",
+              "Dark"
+            ],
+            "ability": "Torrent",
+            "moves": [
+              "Hydro Pump",
+              "Dark Pulse",
+              "Ice Beam"
+            ],
+            "held_item": null
+          }
+        ]
+      },
+      {
+        "condition": "Froakie",
+        "team": [
+          {
+            "pokemon": "Meowstic",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+            "level": 66,
+            "type": [
+              "Psychic"
+            ],
+            "ability": "Keen Eye",
+            "moves": [
+              "Fake Out",
+              "Shadow Ball",
+              "Psychic",
+              "Disarming Voice"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Clefable",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+            "level": 68,
+            "type": [
+              "Fairy"
+            ],
+            "ability": "Magic Guard",
+            "moves": [
+              "Moonblast",
+              "Focus Blast",
+              "Meteor Smash",
+              "Sing"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Absol",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "level": 68,
+            "type": [
+              "Dark"
+            ],
+            "ability": "Super Luck",
+            "moves": [
+              "Night Slash",
+              "Slash",
+              "Quick Attack",
+              "Swords Dance"
+            ],
+            "held_item": "Absolite"
+          },
+          {
+            "pokemon": "Vaporeon",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+            "level": 66,
+            "type": [
+              "Water"
+            ],
+            "ability": "Water Absorb",
+            "moves": [
+              "Hydro Pump",
+              "Quick Attack",
+              "Aurora Beam"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Altaria",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png",
+            "level": 67,
+            "type": [
+              "Dragon",
+              "Flying"
+            ],
+            "ability": "Natural Cure",
+            "moves": [
+              "Dragon Pulse",
+              "Dazzling Gleam",
+              "Confide"
+            ],
+            "held_item": null
+          },
+          {
+            "pokemon": "Chesnaught",
+            "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/652.png",
+            "level": 70,
+            "type": [
+              "Grass",
+              "Fighting"
+            ],
+            "ability": "Overgrow",
+            "moves": [
+              "Wood Hammer",
+              "Brick Break",
+              "Body Slam"
+            ],
+            "held_item": null
+          }
+        ]
+      }
+    ],
+    "__v": 0,
+    "img_url": "https://www.serebii.net/pokearth/maps/kalos/53.jpg"
+  }
+]

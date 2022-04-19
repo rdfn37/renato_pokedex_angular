@@ -1,0 +1,227 @@
+[
+  {
+    "_id": "624a283aedca658278fe684d",
+    "order": "First",
+    "reward": "9,800",
+    "location": "Lysandre Labs",
+    "team": [
+      {
+        "pokemon": "Mienfoo",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/619.png",
+        "level": 45,
+        "type": [
+          "Fighting"
+        ],
+        "ability": "Inner Focus",
+        "moves": [
+          "Swords Dance",
+          "High Jump Kick",
+          "Acrobatics"
+        ],
+        "held_item": null
+      },
+      {
+        "pokemon": "Murkrow",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png",
+        "level": 45,
+        "type": [
+          "Dark",
+          "Flying"
+        ],
+        "ability": "Super Luck",
+        "moves": [
+          "Foul Play",
+          "Aerial Ace",
+          "Retaliate",
+          "Steel Wing"
+        ],
+        "held_item": null
+      },
+      {
+        "pokemon": "Pyroar",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/668.png",
+        "level": 47,
+        "type": [
+          "Fire",
+          "Normal"
+        ],
+        "ability": "Rivalry",
+        "moves": [
+          "Hyper Voice",
+          "Fire Blast",
+          "Dark Pulse"
+        ],
+        "held_item": null
+      },
+      {
+        "pokemon": "Gyarados",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+        "level": 49,
+        "type": [
+          "Water",
+          "Flying"
+        ],
+        "ability": "Intimidate",
+        "moves": [
+          "Aqua Tail",
+          "Earthquake",
+          "Iron Head",
+          "Outrage"
+        ],
+        "held_item": null
+      }
+    ],
+    "__v": 0,
+    "img_url": "https://www.serebii.net/pokearth/maps/kalos/61.jpg"
+  },
+  {
+    "_id": "624b8219b71f0ce2cb496bbc",
+    "order": "Second",
+    "reward": "10,200",
+    "location": "Team Flare Secret HQ",
+    "team": [
+      {
+        "pokemon": "Mienshao",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/620.png",
+        "level": 47,
+        "type": [
+          "Fighting"
+        ],
+        "ability": "Inner Focus",
+        "moves": [
+          "Swords Dance",
+          "High Jump Kick",
+          "Acrobatics"
+        ],
+        "held_item": null
+      },
+      {
+        "pokemon": "Honchkrow",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/430.png",
+        "level": 47,
+        "type": [
+          "Dark",
+          "Flying"
+        ],
+        "ability": "Insomnia",
+        "moves": [
+          "Night Slash",
+          "Aerial Ace",
+          "Retaliate",
+          "Steel Wing"
+        ],
+        "held_item": null
+      },
+      {
+        "pokemon": "Pyroar",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/668.png",
+        "level": 49,
+        "type": [
+          "Fire",
+          "Normal"
+        ],
+        "ability": "Unnerve",
+        "moves": [
+          "Hyper Voice",
+          "Fire Blast",
+          "Dark Pulse"
+        ],
+        "held_item": null
+      },
+      {
+        "pokemon": "Gyarados",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+        "level": 51,
+        "type": [
+          "Water",
+          "Flying"
+        ],
+        "ability": "Intimidate",
+        "moves": [
+          "Aqua Tail",
+          "Earthquake",
+          "Iron Head",
+          "Outrage"
+        ],
+        "held_item": null
+      }
+    ],
+    "__v": 0,
+    "img_url": "https://www.serebii.net/pokearth/maps/kalos/55.jpg"
+  },
+  {
+    "_id": "624b83d797317736e0a7c9ec",
+    "order": "Third",
+    "reward": "10,600",
+    "location": "Team Flare Secret HQ",
+    "img_url": "https://www.pokemontrash.com/images/pokemon-x-y/dresseurs/boss-team-flare.png",
+    "team": [
+      {
+        "pokemon": "Mienshao",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/620.png",
+        "level": 49,
+        "type": [
+          "Fighting"
+        ],
+        "ability": "Inner Focus",
+        "moves": [
+          "Swords Dance",
+          "High Jump Kick",
+          "Acrobatics"
+        ],
+        "held_item": null
+      },
+      {
+        "pokemon": "Honchkrow",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/430.png",
+        "level": 49,
+        "type": [
+          "Dark",
+          "Flying"
+        ],
+        "ability": "Insomnia",
+        "moves": [
+          "Night Slash",
+          "Aerial Ace",
+          "Retaliate",
+          "Steel Wing"
+        ],
+        "held_item": null
+      },
+      {
+        "pokemon": "Pyroar",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/668.png",
+        "level": 51,
+        "type": [
+          "Fire",
+          "Normal"
+        ],
+        "ability": "Unnerve",
+        "moves": [
+          "Hyper Voice",
+          "Fire Blast",
+          "Dark Pulse"
+        ],
+        "held_item": null
+      },
+      {
+        "pokemon": "Gyarados",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+        "level": 53,
+        "type": [
+          "Water",
+          "Flying"
+        ],
+        "ability": "Intimidate",
+        "moves": [
+          "Aqua Tail",
+          "Earthquake",
+          "Iron Head",
+          "Outrage"
+        ],
+        "held_item": "Gyaradosite"
+      }
+    ],
+    "__v": 0
+  }
+]

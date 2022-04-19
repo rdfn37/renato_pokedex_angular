@@ -1,0 +1,61 @@
+[
+  {
+    "_id": "624c6107d99a2729ce4f0fea",
+    "reward": null,
+    "location": "Lumiose City",
+    "img_url": "https://media.pokemoncentral.it/wiki/7/72/AZXY.png",
+    "team": [
+      {
+        "pokemon": "Torkoal",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png",
+        "level": 60,
+        "type": [
+          "Fire"
+        ],
+        "ability": "White Smoke",
+        "moves": [
+          "Lava Plume",
+          "Stone Edge",
+          "Body Slam",
+          "Return"
+        ],
+        "held_item": null
+      },
+      {
+        "pokemon": "Golurk",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/623.png",
+        "level": 60,
+        "type": [
+          "Ground",
+          "Ghost"
+        ],
+        "ability": "No Guard",
+        "moves": [
+          "Phantom Force",
+          "Heavy Slam",
+          "Mega Punch",
+          "Return"
+        ],
+        "held_item": null
+      },
+      {
+        "pokemon": "Sigilyph",
+        "img_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/561.png",
+        "level": 60,
+        "type": [
+          "Psychic",
+          "Flying"
+        ],
+        "ability": "Magic Guard",
+        "moves": [
+          "Psychic",
+          "Air Slash",
+          "Cosmic Power",
+          "Return"
+        ],
+        "held_item": null
+      }
+    ],
+    "__v": 0
+  }
+]
