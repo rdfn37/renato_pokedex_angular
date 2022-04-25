@@ -1,0 +1,815 @@
+[
+  {
+      "location": "Elite #1 - Shauntal",
+      "leader": [
+          {
+              "name": "Elite Four Shauntal",
+              "img_url": "https://www.serebii.net/pokearth/trainers/bw/78.png",
+              "team": [
+                  {
+                      "name": "Cofagrigus",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/563.png",
+                      "level": "Level 48",
+                      "type": [
+                          "/pokedex-bw/type/ghost.gif"
+                      ],
+                      "ability": "Mummy",
+                      "moves": [
+                          "Will-o-wisp",
+                          "Grass Knot",
+                          "Psychic",
+                          "Shadow Ball"
+                      ]
+                  },
+                  {
+                      "name": "Jellicent",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/593-f.png",
+                      "level": "Level 48",
+                      "type": [
+                          "/pokedex-bw/type/water.gif",
+                          "/pokedex-bw/type/ghost.gif"
+                      ],
+                      "ability": "Cursed Body",
+                      "moves": [
+                          "Energy Ball",
+                          "Brine",
+                          "Surf",
+                          "Shadow Ball"
+                      ]
+                  },
+                  {
+                      "name": "Golurk",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/623.png",
+                      "level": "Level 48",
+                      "type": [
+                          "/pokedex-bw/type/ground.gif",
+                          "/pokedex-bw/type/ghost.gif"
+                      ],
+                      "ability": "Iron Fist",
+                      "moves": [
+                          "Curse",
+                          "Earthquake",
+                          "Brick Break",
+                          "Shadow Punch"
+                      ]
+                  },
+                  {
+                      "name": "Chandelure",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/609.png",
+                      "level": "Level 50",
+                      "type": [
+                          "/pokedex-bw/type/ghost.gif",
+                          "/pokedex-bw/type/fire.gif"
+                      ],
+                      "ability": "Flame Body",
+                      "moves": [
+                          "Payback",
+                          "Fire Blast",
+                          "Psychic",
+                          "Shadow Ball"
+                      ]
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "location": "Elite #2 - Grimsley",
+      "leader": [
+          {
+              "name": "Elite Four Grimsley",
+              "img_url": "https://www.serebii.net/pokearth/trainers/bw/80.png",
+              "team": [
+                  {
+                      "name": "Scrafty",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/560.png",
+                      "level": "Level 48",
+                      "type": [
+                          "/pokedex-bw/type/dark.gif",
+                          "/pokedex-bw/type/fighting.gif"
+                      ],
+                      "ability": "Moxie",
+                      "moves": [
+                          "Crunch",
+                          "Brick Break",
+                          "Poison Jab",
+                          "Sand-attack"
+                      ]
+                  },
+                  {
+                      "name": "Liepard",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/510.png",
+                      "level": "Level 48",
+                      "type": [
+                          "/pokedex-bw/type/dark.gif"
+                      ],
+                      "ability": "Limber",
+                      "moves": [
+                          "Night Slash",
+                          "Fake Out",
+                          "Aerial Ace",
+                          "Attract"
+                      ]
+                  },
+                  {
+                      "name": "Krookodile",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/553.png",
+                      "level": "Level 48",
+                      "type": [
+                          "/pokedex-bw/type/ground.gif",
+                          "/pokedex-bw/type/dark.gif"
+                      ],
+                      "ability": "Intimidate",
+                      "moves": [
+                          "Crunch",
+                          "Dragon Claw",
+                          "Earthquake",
+                          "Foul Play"
+                      ]
+                  },
+                  {
+                      "name": "Bisharp",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/625.png",
+                      "level": "Level 50",
+                      "type": [
+                          "/pokedex-bw/type/dark.gif",
+                          "/pokedex-bw/type/steel.gif"
+                      ],
+                      "ability": "Defiant",
+                      "moves": [
+                          "Night Slash",
+                          "X-scissor",
+                          "Metal Claw",
+                          "Aerial Ace"
+                      ]
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "location": "Elite #3 - Caitlin",
+      "leader": [
+          {
+              "name": "Elite Four Caitlin",
+              "img_url": "https://www.serebii.net/pokearth/trainers/bw/81.png",
+              "team": [
+                  {
+                      "name": "Reuniclus",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/579.png",
+                      "level": "Level 48",
+                      "type": [
+                          "/pokedex-bw/type/psychic.gif"
+                      ],
+                      "ability": "Magic Guard",
+                      "moves": [
+                          "Psychic",
+                          "Energy Ball",
+                          "Focus Blast",
+                          "Thunder"
+                      ]
+                  },
+                  {
+                      "name": "Musharna",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/518.png",
+                      "level": "Level 48",
+                      "type": [
+                          "/pokedex-bw/type/psychic.gif"
+                      ],
+                      "ability": "Synchronize",
+                      "moves": [
+                          "Psychic",
+                          "Shadow Ball",
+                          "Charge Beam",
+                          "Reflect"
+                      ]
+                  },
+                  {
+                      "name": "Sigilyph",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/561.png",
+                      "level": "Level 48",
+                      "type": [
+                          "/pokedex-bw/type/psychic.gif",
+                          "/pokedex-bw/type/flying.gif"
+                      ],
+                      "ability": "Wonder Skin ",
+                      "moves": [
+                          "Psychic",
+                          "Shadow Ball",
+                          "Ice Beam",
+                          "Air Slash"
+                      ]
+                  },
+                  {
+                      "name": "Gothitelle",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/576.png",
+                      "level": "Level 50",
+                      "type": [
+                          "/pokedex-bw/type/psychic.gif"
+                      ],
+                      "ability": "Frisk",
+                      "moves": [
+                          "Psychic",
+                          "Shadow Ball",
+                          "Thunderbolt",
+                          "Calm Mind"
+                      ]
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "location": "Elite #4 - Marshal",
+      "leader": [
+          {
+              "name": "Elite Four Marshal",
+              "img_url": "https://www.serebii.net/pokearth/trainers/bw/79.png",
+              "team": [
+                  {
+                      "name": "Throh",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/538.png",
+                      "level": "Level 48",
+                      "type": [
+                          "/pokedex-bw/type/fighting.gif"
+                      ],
+                      "ability": "Guts",
+                      "moves": [
+                          "Storm Throw",
+                          "Bulldoze",
+                          "Stone Edge",
+                          "Payback"
+                      ]
+                  },
+                  {
+                      "name": "Sawk",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/539.png",
+                      "level": "Level 48",
+                      "type": [
+                          "/pokedex-bw/type/fighting.gif"
+                      ],
+                      "ability": "Sturdy",
+                      "moves": [
+                          "Karate Chop",
+                          "Grass Knot",
+                          "Stone Edge",
+                          "Retaliate"
+                      ]
+                  },
+                  {
+                      "name": "Conkeldurr",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/534.png",
+                      "level": "Level 48",
+                      "type": [
+                          "/pokedex-bw/type/fighting.gif"
+                      ],
+                      "ability": "Sheer Force",
+                      "moves": [
+                          "Hammer Arm",
+                          "Grass Knot",
+                          "Stone Edge",
+                          "Retaliate"
+                      ]
+                  },
+                  {
+                      "name": "Mienshao",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/620.png",
+                      "level": "Level 50",
+                      "type": [
+                          "/pokedex-bw/type/fighting.gif"
+                      ],
+                      "ability": "Inner Focus",
+                      "moves": [
+                          "Jump Kick",
+                          "U-turn",
+                          "Rock Slide",
+                          "Retaliate"
+                      ]
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "location": "Elite #1 - Shauntal",
+      "leader": [
+          {
+              "name": "Elite Four Shauntal",
+              "img_url": "https://www.serebii.net/pokearth/trainers/bw/78.png",
+              "team": [
+                  {
+                      "name": "Cofagrigus",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/563.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/ghost.gif"
+                      ],
+                      "ability": "Mummy",
+                      "moves": [
+                          "Shadow Ball",
+                          "Psychic",
+                          "Will-o-wisp",
+                          "Energy Ball"
+                      ]
+                  },
+                  {
+                      "name": "Jellicent",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/593-f.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/water.gif",
+                          "/pokedex-bw/type/ghost.gif"
+                      ],
+                      "ability": "Cursed Body",
+                      "moves": [
+                          "Shadow Ball",
+                          "Psychic",
+                          "Hydro Pump",
+                          "Sludge Wave"
+                      ]
+                  },
+                  {
+                      "name": "Froslass",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/478.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/ice.gif",
+                          "/pokedex-bw/type/ghost.gif"
+                      ],
+                      "ability": "Snow Cloak",
+                      "moves": [
+                          "Shadow Ball",
+                          "Psychic",
+                          "Blizzard",
+                          "Ice Shard"
+                      ]
+                  },
+                  {
+                      "name": "Drifblim",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/426.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/ghost.gif",
+                          "/pokedex-bw/type/flying.gif"
+                      ],
+                      "ability": "Aftermath",
+                      "moves": [
+                          "Shadow Ball",
+                          "Psychic",
+                          "Acrobatics",
+                          "Thunder"
+                      ]
+                  },
+                  {
+                      "name": "Golurk",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/623.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/ground.gif",
+                          "/pokedex-bw/type/ghost.gif"
+                      ],
+                      "ability": "Iron Fist",
+                      "moves": [
+                          "Shadow Punch",
+                          "Earthquake",
+                          "Hammer Arm",
+                          "Curse"
+                      ]
+                  },
+                  {
+                      "name": "Chandelure",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/609.png",
+                      "level": "Level 73",
+                      "type": [
+                          "/pokedex-bw/type/ghost.gif",
+                          "/pokedex-bw/type/fire.gif"
+                      ],
+                      "ability": "Flame Body",
+                      "moves": [
+                          "Shadow Ball",
+                          "Psychic",
+                          "Fire Blast",
+                          "Payback"
+                      ]
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "location": "Elite #2 - Grimsley",
+      "leader": [
+          {
+              "name": "Elite Four Grimsley",
+              "img_url": "https://www.serebii.net/pokearth/trainers/bw/80.png",
+              "team": [
+                  {
+                      "name": "Sharpedo",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/319.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/water.gif",
+                          "/pokedex-bw/type/dark.gif"
+                      ],
+                      "ability": "Rough Skin",
+                      "moves": [
+                          "Aqua Jet",
+                          "Night Slash",
+                          "Waterfall",
+                          "Earthquake"
+                      ]
+                  },
+                  {
+                      "name": "Liepard",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/510.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/dark.gif"
+                      ],
+                      "ability": "Limber",
+                      "moves": [
+                          "Sucker Punch",
+                          "Fake Out",
+                          "Aerial Ace",
+                          "Attract"
+                      ]
+                  },
+                  {
+                      "name": "Scrafty",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/560.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/dark.gif",
+                          "/pokedex-bw/type/fighting.gif"
+                      ],
+                      "ability": "Moxie",
+                      "moves": [
+                          "Head Smash",
+                          "Crunch",
+                          "Brick Break",
+                          "Poison Jab"
+                      ]
+                  },
+                  {
+                      "name": "Drapion",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/452.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/poison.gif",
+                          "/pokedex-bw/type/dark.gif"
+                      ],
+                      "ability": "Battle Armor",
+                      "moves": [
+                          "Thunder Fang",
+                          "Poison Fang",
+                          "Fire Fang",
+                          "Crunch"
+                      ]
+                  },
+                  {
+                      "name": "Krookodile",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/553.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/ground.gif",
+                          "/pokedex-bw/type/dark.gif"
+                      ],
+                      "ability": "Intimidate",
+                      "moves": [
+                          "Smack Down",
+                          "Earthquake",
+                          "Foul Play",
+                          "Outrage"
+                      ]
+                  },
+                  {
+                      "name": "Bisharp",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/625.png",
+                      "level": "Level 73",
+                      "type": [
+                          "/pokedex-bw/type/dark.gif",
+                          "/pokedex-bw/type/steel.gif"
+                      ],
+                      "ability": "Defiant",
+                      "moves": [
+                          "Guillotine",
+                          "Night Slash",
+                          "X-scissor",
+                          "Aerial Ace"
+                      ]
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "location": "Elite #3 - Caitlin",
+      "leader": [
+          {
+              "name": "Elite Four Caitlin",
+              "img_url": "https://www.serebii.net/pokearth/trainers/bw/81.png",
+              "team": [
+                  {
+                      "name": "Musharna",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/518.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/psychic.gif"
+                      ],
+                      "ability": "Synchronize",
+                      "moves": [
+                          "Psychic",
+                          "Dream Eater",
+                          "Hypnosis",
+                          "Reflect"
+                      ]
+                  },
+                  {
+                      "name": "Sigilyph",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/561.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/psychic.gif",
+                          "/pokedex-bw/type/flying.gif"
+                      ],
+                      "ability": "Wonder Skin ",
+                      "moves": [
+                          "Air Slash",
+                          "Psychic",
+                          "Flash Cannon",
+                          "Ice Beam"
+                      ]
+                  },
+                  {
+                      "name": "Bronzong",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/437.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/steel.gif",
+                          "/pokedex-bw/type/psychic.gif"
+                      ],
+                      "ability": "Levitate",
+                      "moves": [
+                          "Payback",
+                          "Flash Cannon",
+                          "Psychic",
+                          "Charge Beam"
+                      ]
+                  },
+                  {
+                      "name": "Reuniclus",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/579.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/psychic.gif"
+                      ],
+                      "ability": "Magic Guard",
+                      "moves": [
+                          "Psychic",
+                          "Thunder",
+                          "Energy Ball",
+                          "Focus Blast"
+                      ]
+                  },
+                  {
+                      "name": "Gothitelle",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/576.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/psychic.gif"
+                      ],
+                      "ability": "Frisk",
+                      "moves": [
+                          "Psychic",
+                          "Payback",
+                          "Flatter",
+                          "Thunderbolt"
+                      ]
+                  },
+                  {
+                      "name": "Metagross",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/376.png",
+                      "level": "Level 73",
+                      "type": [
+                          "/pokedex-bw/type/steel.gif",
+                          "/pokedex-bw/type/psychic.gif"
+                      ],
+                      "ability": "Clear Body",
+                      "moves": [
+                          "Zen Headbutt",
+                          "Bullet Punch",
+                          "Earthquake",
+                          "Giga Impact"
+                      ]
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "location": "Elite #4 - Marshal",
+      "leader": [
+          {
+              "name": "Elite Four Marshal",
+              "img_url": "https://www.serebii.net/pokearth/trainers/bw/79.png",
+              "team": [
+                  {
+                      "name": "Breloom",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/286.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/grass.gif",
+                          "/pokedex-bw/type/fighting.gif"
+                      ],
+                      "ability": "Effect Spore",
+                      "moves": [
+                          "Mach Punch",
+                          "Spore",
+                          "Grass Knot",
+                          "Sky Uppercut"
+                      ]
+                  },
+                  {
+                      "name": "Sawk",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/539.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/fighting.gif"
+                      ],
+                      "ability": "Sturdy",
+                      "moves": [
+                          "Close Combat",
+                          "Retaliate",
+                          "Stone Edge",
+                          "Poison Jab"
+                      ]
+                  },
+                  {
+                      "name": "Throh",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/538.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/fighting.gif"
+                      ],
+                      "ability": "Guts",
+                      "moves": [
+                          "Superpower",
+                          "Retaliate",
+                          "Earthquake",
+                          "Grass Knot"
+                      ]
+                  },
+                  {
+                      "name": "Toxicroak",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/454.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/poison.gif",
+                          "/pokedex-bw/type/fighting.gif"
+                      ],
+                      "ability": "Anticipation",
+                      "moves": [
+                          "Venoshock",
+                          "Toxic",
+                          "Low Sweep",
+                          "Earthquake"
+                      ]
+                  },
+                  {
+                      "name": "Mienshao",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/620.png",
+                      "level": "Level 71",
+                      "type": [
+                          "/pokedex-bw/type/fighting.gif"
+                      ],
+                      "ability": "Inner Focus",
+                      "moves": [
+                          "Hi Jump Kick",
+                          "U-turn",
+                          "Acrobatics",
+                          "Fake Out"
+                      ]
+                  },
+                  {
+                      "name": "Conkeldurr",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/534.png",
+                      "level": "Level 73",
+                      "type": [
+                          "/pokedex-bw/type/fighting.gif"
+                      ],
+                      "ability": "Sheer Force",
+                      "moves": [
+                          "Hammer Arm",
+                          "Earthquake",
+                          "Stone Edge",
+                          "Payback"
+                      ]
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "location": "Champion - Alder",
+      "leader": [
+          {
+              "name": "Champion Alder",
+              "img_url": "https://www.serebii.net/pokearth/trainers/bw/89.png",
+              "team": [
+                  {
+                      "name": "Accelgor",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/617.png",
+                      "level": "Level 75",
+                      "type": [
+                          "/pokedex-bw/type/bug.gif"
+                      ],
+                      "ability": "Hydration",
+                      "moves": [
+                          "Focus Blast",
+                          "Bug Buzz",
+                          "Me First",
+                          "Energy Ball"
+                      ]
+                  },
+                  {
+                      "name": "Bouffalant",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/626.png",
+                      "level": "Level 75",
+                      "type": [
+                          "/pokedex-bw/type/normal.gif"
+                      ],
+                      "ability": "Sap Sipper",
+                      "moves": [
+                          "Head Charge",
+                          "Megahorn",
+                          "Earthquake",
+                          "Stone Edge"
+                      ]
+                  },
+                  {
+                      "name": "Druddigon",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/621.png",
+                      "level": "Level 75",
+                      "type": [
+                          "/pokedex-bw/type/dragon.gif"
+                      ],
+                      "ability": "Rough Skin",
+                      "moves": [
+                          "Outrage",
+                          "Superpower",
+                          "Night Slash",
+                          "Payback"
+                      ]
+                  },
+                  {
+                      "name": "Vanilluxe",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/584.png",
+                      "level": "Level 75",
+                      "type": [
+                          "/pokedex-bw/type/ice.gif"
+                      ],
+                      "ability": "Ice Body",
+                      "moves": [
+                          "Blizzard",
+                          "Flash Cannon",
+                          "Light Screen",
+                          "Acid Armor"
+                      ]
+                  },
+                  {
+                      "name": "Escavalier",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/589.png",
+                      "level": "Level 75",
+                      "type": [
+                          "/pokedex-bw/type/bug.gif",
+                          "/pokedex-bw/type/steel.gif"
+                      ],
+                      "ability": "Swarm",
+                      "moves": [
+                          "X-scissor",
+                          "Iron Head",
+                          "Aerial Ace",
+                          "Giga Impact"
+                      ]
+                  },
+                  {
+                      "name": "Volcarona",
+                      "img_url": "https://www.serebii.net/blackwhite/pokemon/637.png",
+                      "level": "Level 77",
+                      "type": [
+                          "/pokedex-bw/type/bug.gif",
+                          "/pokedex-bw/type/fire.gif"
+                      ],
+                      "ability": "Flame Body",
+                      "moves": [
+                          "Overheat",
+                          "Quiver Dance",
+                          "Bug Buzz",
+                          "Hyper Beam"
+                      ]
+                  }
+              ]
+          }
+      ]
+  }
+]

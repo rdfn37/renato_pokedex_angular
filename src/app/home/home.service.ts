@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map, Observable, tap } from 'rxjs';
+import { delay, map, Observable, tap } from 'rxjs';
 
 import { HomePokemon } from '../home/models/homePokemon';
 import { EvolutionChain } from './models/evolution-chain';
@@ -31,7 +31,9 @@ export class HomeService {
   getPokemonList(gen: [number, number] = this.gen1): Observable<HomePokemon[]> {
     return this.httpClient
       .get<ApiResponse>(this.url + `${gen[0]}&limit=${gen[1]}`)
-      .pipe(map((data) => data.results));
+      .pipe(
+        map((data) => data.results),
+        delay(1000));
   }
 
   getPokemon(url: string): Observable<Pokemon> {

@@ -7,12 +7,16 @@ import { Observable, tap } from 'rxjs';
   providedIn: 'root',
 })
 export class BwService {
-  private readonly uri = '../../assets/pkmn_bw/pkmn_bw.json';
+  private readonly uri = '../../assets/pkmn_bw/';
 
 
   constructor(private http: HttpClient) {}
 
   getGyms(): Observable<Gyms[]> {
-    return this.http.get<Gyms[]>(this.uri)
+    return this.http.get<Gyms[]>(this.uri + 'gyms.json')
+  }
+
+  getLeague(): Observable<Gyms[]> {
+    return this.http.get<Gyms[]>(this.uri + 'league.json')
   }
 }

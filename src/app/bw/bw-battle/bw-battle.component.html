@@ -1,4 +1,4 @@
-<mat-tab-group>
+<mat-tab-group dynamicHeight>
   <mat-tab label="Gyms">
     <mat-card *ngFor="let gym of gyms$ | async" class="example-card back-var card-main">
       <mat-card-header>
@@ -8,7 +8,7 @@
       <ng-container *ngFor="let leader of gym.leader">
         <h3>{{leader.name}}</h3>
         <div class="gym-leader-frame">
-          <img height="150px" src={{leader.img_url}} alt="">
+          <img mat-card-sm-image height="150px" src={{leader.img_url}} alt="">
         </div>
         <mat-card-content>
           <p>
@@ -43,8 +43,46 @@
     </mat-card>
   </mat-tab>
   <mat-tab label="League">
-    <div class="text-white text-center">
-      <h3>Soon...</h3>
-    </div>
+    <mat-card *ngFor="let gym of league$ | async" class="example-card back-var card-main">
+      <mat-card-header>
+        <mat-card-title>{{gym.location}}</mat-card-title>
+        <mat-card-subtitle>Rewards: No reward data</mat-card-subtitle>
+      </mat-card-header>
+      <ng-container *ngFor="let leader of gym.leader">
+        <h3>{{leader.name}}</h3>
+        <div class="gym-leader-frame">
+          <img mat-card-sm-image height="150px" src={{leader.img_url}} alt="">
+        </div>
+        <mat-card-content>
+          <p>
+            No description data
+          </p>
+          <mat-grid-list cols="4" rowHeight="420px" gutterSize="15px">
+            <mat-grid-tile *ngFor="let pokemon of leader.team" [colspan]="colspan">
+              <mat-card class="poke-info">
+                <mat-card-title>{{pokemon.name}}</mat-card-title>
+                <a routerLink="/{{pokemon.name| lowercase}}">
+                  <img mat-card-sm-image src={{pokemon.img_url}} alt="">
+                </a>
+                <mat-card-content>
+                  <p>{{pokemon.level}}</p>
+                  <span>Type: </span>
+                  <span *ngFor="let type of pokemon.type" class="type {{type | lowercase}}">
+                    <img src="https://www.serebii.net{{type}}" alt="">
+
+                  </span>
+                  <mat-list>
+                    <mat-list-item *ngFor="let move of pokemon.moves">
+                      <mat-divider></mat-divider>
+                      {{move}}
+                    </mat-list-item>
+                  </mat-list>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-card-content>
+      </ng-container>
+    </mat-card>
   </mat-tab>
 </mat-tab-group>

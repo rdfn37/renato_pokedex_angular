@@ -1,14 +1,13 @@
 <mat-toolbar  class="header toolbar p-0 d-flex flex-column flex-md-row justify-content-between">
   <div class="d-flex align-items-center">
-    <button routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>catching_pokemon</mat-icon>
-    </button>
-    <h1>Nuzlockedex</h1>
+    <a routerLink="/" class="ms-2 text-decoration-none text-white">
+      <img height="50px" src="../../../assets/nuzlockedex_logo.png" alt="Nuzlockedex Logo">
+    </a>
   </div>
 
   <div class="search d-flex flex-column flex-md-row" color="accent">
     <mat-form-field>
-      <input type="text" [(ngModel)]="search" matInput placeholder="Search Pokémon">
+      <input class="text-black" type="text" [(ngModel)]="search" matInput placeholder="Search Pokémon">
     </mat-form-field>
     <button type="submit" mat-raised-button class="btn back-accent">
       <span class="material-icons">

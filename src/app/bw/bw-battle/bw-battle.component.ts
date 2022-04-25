@@ -12,6 +12,7 @@ import { Gyms } from '../models/gyms';
 })
 export class BwBattleComponent implements OnInit {
   gyms$?: Observable<Gyms[]>;
+  league$?: Observable<Gyms[]>;
 
   currentScreenSize!: string;
   destroyed = new Subject<void>();
@@ -69,5 +70,6 @@ export class BwBattleComponent implements OnInit {
     });
 
     this.gyms$ = this.bwService.getGyms();
+    this.league$ = this.bwService.getLeague();
   }
 }

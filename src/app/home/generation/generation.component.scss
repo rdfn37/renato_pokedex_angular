@@ -1,3 +1,5 @@
+@import "src/styles.scss";
+
 .container {
   img {
     height: 150px;
@@ -43,4 +45,15 @@
 
 a {
   text-decoration: none;
+}
+
+.loading-spinner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.accent {
+  color: $accent;
 }

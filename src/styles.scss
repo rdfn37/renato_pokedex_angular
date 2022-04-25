@@ -4,12 +4,14 @@
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 @include mat.core();
 
 $body-bg: #000;
 
 $my-primary: mat.define-palette(mat.$purple-palette, #2F397C);
-$my-accent: mat.define-palette(mat.$yellow-palette, 200);
+$my-accent: mat.define-palette(mat.$green-palette, A400);
 $my-warn: mat.define-palette(mat.$red-palette, 800);
 
 $dark-primary: mat.define-palette(mat.$gray-palette, 900);
@@ -36,10 +38,10 @@ $dark-theme: mat.define-light-theme(
 
 @include mat.all-component-themes($my-theme);
 
-$primary: #082032;
-$secondary: #2C394B;
-$var: #334756;
-$accent: #FF4C29;
+$primary: #252525;
+$secondary: #444;
+$var: #111;
+$accent: #24AC89;
 
 // $primary: #212121;
 // $secondary: #01579B;
@@ -52,8 +54,17 @@ $accent: #FF4C29;
 html, body { min-height: 100%; }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: 'Tapestry', cursive;
   background-color: $secondary;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+  background: $accent;
+  height: 2px;
+}
+
+.mat-progress-spinner circle {
+  stroke: $accent;
 }
 
 .back-var {
